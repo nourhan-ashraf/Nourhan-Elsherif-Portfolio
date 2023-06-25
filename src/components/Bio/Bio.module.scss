@@ -1,0 +1,107 @@
+.bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    font-family: 'raleway';
+    margin: 165px 190px 0 190px;
+}
+
+.locationIcon {
+    width: 22px;
+}
+
+.centerLoc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.location {
+    color: #000;
+    font-size: 18px;
+    font-family: 'raleway';
+    font-weight: 700;
+}
+
+.subTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.hiTitle{
+    
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.job {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.name {
+    color: #000;
+    font-size: 38px;
+    font-family: 'raleway';
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-20%, -50%);
+
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    margin-left: -100px;
+
+}
+
+.picContainer {
+    position: relative;
+    text-align: center;
+}
+
+
+.highlight {
+    position: relative;
+}
+
+.myPic {
+    width: 277px;
+    height: 344px;
+    position: absolute;
+    top: 37%;
+    left: 27%;
+    transform: translate(-20%, -50%);
+}
+
+.art {
+    width: 70px;
+    position: absolute;
+    top: 7%;
+    left: 88%;
+    transform: translate(-20%, -50%);
+}
+
+.code {
+    width: 55px;
+    position: absolute;
+    top: 93%;
+    left: -2%;
+    transform: translate(-20%, -50%);
+}
+
+.picBg {
+    position: relative;
+}
+
+.leftPart {
+    margin-top: 15px;
+}

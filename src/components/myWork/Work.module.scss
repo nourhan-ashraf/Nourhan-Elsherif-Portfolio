@@ -1,0 +1,19 @@
+.work{
+    font-family: 'raleway';
+    margin-top: 50px;
+    padding: 100px 190px;
+    height: 300px;
+}
+.container {
+    position: relative;
+}
+
+
+.title {
+    position: absolute;
+    font-size: 23px;
+    font-weight: 700;
+    top: 47%;
+    left: 12.5%;
+    transform: translate(-100%, -50%);
+}
