@@ -9,10 +9,10 @@ const Home = () => {
     const sectionsRef = useRef({});
 
     const handleScroll = (sectionId) => {
-      const sectionElement = sectionsRef.current[sectionId];
-      if (sectionElement) {
-        sectionElement.scrollIntoView({ behavior: 'smooth' });
-      }
+        const sectionElement = sectionsRef.current[sectionId];
+        if (sectionElement) {
+            sectionElement.scrollIntoView({ behavior: 'smooth' });
+        }
     }
     const toggleVisible = () => {
         const scrolled = document.documentElement.scrollTop;
@@ -33,12 +33,12 @@ const Home = () => {
     window.addEventListener('scroll', toggleVisible);
     return (
         <div>
-            <Nav handleScroll={handleScroll}/>
-            <Bio sectionsRef={sectionsRef}/>
-            <WhatIdo sectionsRef={sectionsRef}/>
-            <Work sectionsRef={sectionsRef}/>
-            <Contact sectionsRef={sectionsRef}/>
-            <img onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none', cursor: "pointer", position: "sticky", bottom: "5%", left: "91%", width: "50px" }} src="/upLight.png" />
+            <img onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none', cursor: "pointer", position: "sticky", top: "82%", left: "91%", width: "50px" }} src="/upLight.png" />
+            <Nav handleScroll={handleScroll} />
+            <Bio sectionsRef={sectionsRef} />
+            <WhatIdo sectionsRef={sectionsRef} />
+            <Work sectionsRef={sectionsRef} />
+            <Contact sectionsRef={sectionsRef} />
         </div>
     )
 }

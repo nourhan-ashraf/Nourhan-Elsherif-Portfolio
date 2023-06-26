@@ -1,0 +1,42 @@
+.container {
+  position: relative;
+  width: 95%;
+  overflow-x: hidden;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.scrollable {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  // Adjust the size of the scrollable content as needed
+  // Example:
+  // width: 2000px;
+}
+
+.scroll_button {
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+
+  &.left {
+    left: 10px;
+  }
+
+  &.right {
+    right: 10px;
+  }
+}

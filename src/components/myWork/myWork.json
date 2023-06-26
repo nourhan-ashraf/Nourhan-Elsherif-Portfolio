@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Banding Together",
+        "description": "E-Communication and Collaboration Web App",
+        "img": "/bt.png",
+        "link": "kdkfd.com"
+    },
+    {
+        "id": 2,
+        "name": "CineBox",
+        "description": "UI/UX Movie Tickets Booking App",
+        "img": "/cb.png",
+        "link": "duhds.com"
+    },
+    {
+        "id": 3,
+        "name": "Job search",
+        "description": "A job search using an API",
+        "img": "/bt.png",
+        "link": "duhds.com"
+    },
+    {
+        "id": 4,
+        "name": "Portfolio",
+        "description": "My personal portfolio",
+        "img": "/cb.png",
+        "link": "cb.com"
+    }
+]

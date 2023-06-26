@@ -1,8 +1,11 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+
 const Project = () => {
-    return(
+    const { id } = useParams();
+    return (
         <div>
-            Project page
+            Project page {id}
         </div>
     )
 }

@@ -8,7 +8,7 @@
 }
 
 .locationIcon {
-    width: 22px;
+    width: 25px;
 }
 
 .centerLoc {
@@ -29,29 +29,31 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 27px;
 }
 .hiTitle{
-    
-    font-size: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
     font-weight: 400;
 }
 
 .job {
     font-size: 20px;
     font-weight: 700;
+    font-family: 'raleway';
+
 }
 
 .name {
     color: #000;
-    font-size: 35px;
+    font-size: 37px;
     font-family: 'raleway';
     font-weight: 600;
     position: absolute;
-    top: 53%;
-    left: 30%;
+    top: 43%;
+    left: 32%;
     transform: translate(-20%, -50%);
 
 }
@@ -59,7 +61,7 @@
 .container {
     position: relative;
     text-align: center;
-    margin-left: -90px;
+    margin-left: -120px;
 
 }
 

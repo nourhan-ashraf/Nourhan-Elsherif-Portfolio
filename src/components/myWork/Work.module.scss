@@ -1,9 +1,11 @@
-.work{
+.work {
     font-family: 'raleway';
     margin-top: 50px;
-    padding: 100px 220px;
-    height: 300px;
+    padding: 50px 220px;
+    height: auto;
+    padding-bottom: 70px;
 }
+
 .container {
     position: relative;
 }
@@ -13,7 +15,7 @@
     position: absolute;
     font-size: 23px;
     font-weight: 700;
-    top: 47%;
+    top: 7.5%;
     left: 12.5%;
     transform: translate(-100%, -50%);
 }

@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import styles from './Nav.module.scss'
+import { Link } from 'react-router-dom';
+
 const Nav = ({ handleScroll }) => {
     {/*const [homeClicked, setHomeClicked] = useState(true)
     const [doClicked, setDoClicked] = useState(false)
     const [workClicked, setWorkClicked] = useState(false)
 const [contactClicked, setContactClicked] = useState(false)*/}
     const [darkMode, setDarkMode] = useState(false);
+
     {/*const handleHomeClick = () => {
         setHomeClicked(true);
         setDoClicked(false);
@@ -40,6 +43,7 @@ const [contactClicked, setContactClicked] = useState(false)*/}
     const handleColorModeClick = () => {
         setDarkMode(!darkMode)
     }
+  
     return (
         <div className={styles.nav}>
             <img onClick={handleColorModeClick} className={styles.darkIcon} src={darkMode ? "/light.png" : "/dark.png"} />
@@ -50,8 +54,9 @@ const [contactClicked, setContactClicked] = useState(false)*/}
                     <li onClick={handleContactClick} className={styles.listItem}>Contact</li>
                 </ul>
             </div>
-            <button className={styles.resumeBtn}>Resume</button>
-
+            <Link to="https://drive.google.com/file/d/1kf9-IMa9yk4QsJ0m4FVaYljx5pTfwc5_/view?usp=drive_link" target="_blank" rel="noopener noreferrer">  
+        <button className={styles.resumeBtn}>Resume</button>
+        </Link>
         </div>
     )
 }
