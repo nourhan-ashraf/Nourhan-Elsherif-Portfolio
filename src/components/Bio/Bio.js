@@ -6,7 +6,7 @@ const Bio = () => {
             <div className={styles.leftPart}>
                 <div className={styles.hiTitle}>Hi, my name is</div>
                 <div className={styles.container}>
-                    <img src="./highlight.png" />
+                    <img width="70%" src="./highlight1.svg" />
                     <div className={styles.name}>Nourhan Elsherif</div></div>
 
                 <div className={styles.subTitle}>I’m a&nbsp;
@@ -21,9 +21,9 @@ const Bio = () => {
             </div>
 
             <div className={styles.picContainer}>
-                <img className={styles.picBg} src="/yellowLight.svg" />
-                <img className={styles.myPic} src="/me2.svg" />
-                <img className={styles.art} src="/art (2).png" />
+                <img className={styles.picBg} src="/yellowLight2.svg" />
+                <img className={styles.myPic} src="/me3.svg" />
+                <img className={styles.art} src="/art.png" />
                 <img className={styles.code} src="/codeLight.png" />
 
             </div>

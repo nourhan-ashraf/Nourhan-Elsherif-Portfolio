@@ -3,6 +3,7 @@
     height: 50px;
     cursor: pointer;
 }
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -19,26 +20,36 @@
     align-items: center;
     gap: 50px;
 }
-.listItem{
+
+.listItem {
     list-style-type: none;
     font-family: 'raleway';
     font-weight: 400;
     font-size: 20px;
-    &:hover{
+
+    &:hover {
+        list-style-type: none;
+        font-family: 'raleway';
+        font-weight: 700;
+        font-size: 20px;
+        text-decoration: underline;
         cursor: pointer;
     }
 }
-.listItemClicked{
+
+.listItemClicked {
     list-style-type: none;
     font-family: 'raleway';
     font-weight: 700;
     font-size: 20px;
 
     text-decoration: underline;
-    &:hover{
+
+    &:hover {
         cursor: pointer;
     }
 }
+
 .resumeBtn {
     background-color: black;
     color: white;

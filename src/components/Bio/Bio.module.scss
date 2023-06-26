@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: start;
     font-family: 'raleway';
-    margin: 165px 190px 0 190px;
+    margin: 155px 220px 0 220px;
 }
 
 .locationIcon {
@@ -40,17 +40,17 @@
 }
 
 .job {
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .name {
     color: #000;
-    font-size: 38px;
+    font-size: 35px;
     font-family: 'raleway';
     font-weight: 600;
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 30%;
     transform: translate(-20%, -50%);
 
@@ -59,7 +59,7 @@
 .container {
     position: relative;
     text-align: center;
-    margin-left: -100px;
+    margin-left: -90px;
 
 }
 
@@ -83,10 +83,10 @@
 }
 
 .art {
-    width: 70px;
+    width: 55px;
     position: absolute;
     top: 7%;
-    left: 88%;
+    left: 90%;
     transform: translate(-20%, -50%);
 }
 
@@ -103,5 +103,5 @@
 }
 
 .leftPart {
-    margin-top: 15px;
+    margin-top: 30px;
 }
