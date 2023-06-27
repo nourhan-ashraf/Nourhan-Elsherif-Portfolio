@@ -1,0 +1,128 @@
+.project {
+    font-family: 'raleway';
+}
+
+.projectBio {
+    font-family: 'raleway';
+    background: rgba(217, 217, 217, 0.20);
+    margin-top: 30px;
+    padding: 80px 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 65px;
+}
+
+.name {
+
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.subTitle {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
+
+}
+
+.link {
+    font-size: 15px;
+    font-weight: 600;
+    color: #6431DB;
+    border: none;
+    text-decoration: underline;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+}
+
+
+.descTitle {
+    position: absolute;
+    font-size: 21px;
+    font-weight: 700;
+    top: 44%;
+    left: 14%;
+    transform: translate(-100%, -50%);
+}
+
+.demoTitle {
+    position: absolute;
+    font-size: 21px;
+    font-weight: 700;
+    top: 44%;
+    left: 12%;
+    transform: translate(-100%, -50%);
+}
+
+.partTitle {
+    position: absolute;
+    font-size: 21px;
+    font-weight: 700;
+    top: 44%;
+    left: 12.5%;
+    transform: translate(-100%, -50%);
+}
+
+.techTitle {
+    position: absolute;
+    font-size: 21px;
+    font-weight: 700;
+    top: 44%;
+    left: 14.8%;
+    transform: translate(-100%, -50%);
+}
+
+.desc {
+    margin-top: 50px;
+    padding: 50px 220px;
+    height: auto;
+    padding-bottom: 70px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.demo {margin-top: 50px;
+    padding: 50px 220px;
+    height: auto;
+    padding-bottom: 70px;
+    font-size: 20px;
+    text-align: justify;}
+
+.myPart {
+    margin-top: 50px;
+    padding: 50px 220px;
+    height: auto;
+    padding-bottom: 70px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.tech {
+    margin-top: 50px;
+    padding: 50px 220px;
+    height: auto;
+    padding-bottom: 70px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video{
+    width: 70%;
+}

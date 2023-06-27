@@ -5,6 +5,7 @@ import { ImBehance2 } from 'react-icons/im'
 import { SiUpwork } from 'react-icons/si'
 import { CgMail } from 'react-icons/cg'
 import { Link } from 'react-router-dom';
+import Footer from "../Footer/Footer";
 
 const Contact = ({ sectionsRef }) => {
     return (
@@ -46,10 +47,7 @@ const Contact = ({ sectionsRef }) => {
                     </Link>
                 </div>
             </div>
-            <div className={styles.footer}>
-                <div className={styles.content}>@2023 Nourhan Elsherif</div>
-            </div>
-
+            <Footer />
         </div>
     )
 }

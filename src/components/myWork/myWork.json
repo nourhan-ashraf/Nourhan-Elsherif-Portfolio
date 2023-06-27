@@ -2,29 +2,54 @@
     {
         "id": 1,
         "name": "Banding Together",
-        "description": "E-Communication and Collaboration Web App",
+        "subTitle": "E-Communication and Collaboration Web App",
+        "description": "Banding Together is a user-friendly web application that combines essential features required by the target users (freelancers, students, remote workers, and companies), including chat, meet, project planning features, performance tracking tools, and more. Additionally, the system incorporates a Recommendation system to assist freelancers in finding suitable project-based opportunities and help job owners find suitable employees.",
+        "demo":"https://drive.google.com/file/d/1shebb16I6g27druutkGtjkKgzBcWjfyU/view?usp=sharing",
+        "myPart": "This is my graduation project, I contributed in <b>UI/UX design, Graphic Design, frontend development</b>, and played a role in <b>implementing the recommendation system</b>.",
+        "technologies":"For the UI Design part we used <b>Figma</b>. <br /><br />For the Web application development we used <b>MERN stack</b> with <b>websockets</b> for the real-time communication and <b>cloudinary</b> as a cloud.  <br /><br />We used <b>Chakra UI</b> as CSS framework.",
         "img": "/bt.png",
-        "link": "kdkfd.com"
+        "logo": "/btLogo.svg",
+        "link": "https://bandingtogether.vercel.app/",
+        "website":true
     },
+
     {
         "id": 2,
         "name": "CineBox",
-        "description": "UI/UX Movie Tickets Booking App",
+        "subTitle": "UI/UX Movie Tickets Booking App",
+        "description": "The UI/UX product design strategy caters to the needs of cinephiles who face difficulties with inconvenient movie ticket booking processes. Through the intuitive user interface and user experience design, I streamline the browsing of movies, showtimes, and cinemas, allowing users to easily select their desired cinema, movie, seat, and payment method, including local options like Fawry. My solution eliminates the hassle of crowded ticket booths and the time-consuming search for streaming options.",
+        "demo":"link.com",
+        "myPart": "",
+        "technologies":"",
         "img": "/cb.png",
-        "link": "duhds.com"
+        "logo":"/cbLogo.svg",
+        "link": "https://www.behance.net/gallery/143105211/Movie-Tickets-Booking-App-UIUX",
+        "website":false
     },
     {
         "id": 3,
         "name": "Job search",
-        "description": "A job search using an API",
+        "subTitle": "A job search using an API",
+        "description": "The UI/UX product design strategy caters to the needs of cinephiles who face difficulties with inconvenient movie ticket booking processes. Through the intuitive user interface and user experience design, I streamline the browsing of movies, showtimes, and cinemas, allowing users to easily select their desired cinema, movie, seat, and payment method, including local options like Fawry. My solution eliminates the hassle of crowded ticket booths and the time-consuming search for streaming options.",
+        "demo":"link.com",
+        "myPart": "",
+        "technologies":"",
         "img": "/bt.png",
-        "link": "duhds.com"
+        "logo":"",
+        "link": "https://github-job-search.vercel.app/",
+        "website":true
     },
     {
         "id": 4,
         "name": "Portfolio",
-        "description": "My personal portfolio",
+        "subTitle": "My personal portfolio",
+        "description": "",
+        "demo":"link.com",
+        "myPart": "",
+        "technologies":"",
         "img": "/cb.png",
-        "link": "cb.com"
+        "logo":"",
+        "link": "https://github.com/nourhan-ashraf/Portfolio",
+        "website":true
     }
 ]

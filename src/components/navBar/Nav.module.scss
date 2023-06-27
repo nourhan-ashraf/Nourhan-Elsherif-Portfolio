@@ -4,6 +4,12 @@
     cursor: pointer;
 }
 
+.backIcon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -25,13 +31,13 @@
     list-style-type: none;
     font-family: 'raleway';
     font-weight: 400;
-    font-size: 22px;
+    font-size: 20px;
 
     &:hover {
         list-style-type: none;
         font-family: 'raleway';
         font-weight: 700;
-        font-size: 22px;
+        font-size: 20px;
         text-decoration: underline;
         cursor: pointer;
     }
