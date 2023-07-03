@@ -6,6 +6,15 @@
     font-family: 'raleway';
     margin: 155px 220px 0 220px;
 }
+.bioDark {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    font-family: 'raleway';
+    margin: 155px 220px 0 220px;
+    color: white;
+}
 
 .locationIcon {
     width: 25px;
@@ -19,7 +28,6 @@
 }
 
 .location {
-    color: #000;
     font-size: 18px;
     font-family: 'raleway';
     font-weight: 700;

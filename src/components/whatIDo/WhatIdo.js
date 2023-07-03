@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from './WhatIdo.module.scss'
+import { DarkModeContext } from "../../context/ThemeContext";
 
 const WhatIdo = ({ sectionsRef }) => {
+    const {darkMode} = useContext(DarkModeContext)
     return (
-        <div ref={(ref) => (sectionsRef.current['section2'] = ref)} className={styles.what}>
+        <div ref={(ref) => (sectionsRef.current['section2'] = ref)} className={darkMode ? styles.whatDark : styles.what}>
             <div className={styles.container}>
-                <img src='/smallHighlight1.svg' />
+                <img src={darkMode ? '/smallHighlightDark.svg' : '/smallHighlight1.svg'} />
                 <div className={styles.title}>What I do</div>
 
             </div>

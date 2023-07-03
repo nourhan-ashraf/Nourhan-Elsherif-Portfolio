@@ -1,8 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import WorkCard from './Card';
 import styles from './Cards.module.scss'
+import { DarkModeContext } from '../../context/ThemeContext';
 const ScrollableContainer = () => {
+    const {darkMode} = useContext(DarkModeContext)
     const containerRef = useRef(null);
     const [scrollLeft, setScrollLeft] = useState(0);
 
@@ -22,10 +24,10 @@ const ScrollableContainer = () => {
             <div className={styles.scrollable} ref={containerRef}>
                 <WorkCard />
             </div>
-            <button className={`${styles.scroll_button} ${styles.left}`} onClick={() => scrollContainer(-200)}>
+            <button className={`${darkMode ? styles.scrollButtonDark : styles.scrollButton} ${styles.left}`} onClick={() => scrollContainer(-200)}>
                 <FaChevronLeft />
             </button>
-            <button className={`${styles.scroll_button} ${styles.right}`} onClick={() => scrollContainer(200)}>
+            <button className={`${darkMode ? styles.scrollButtonDark : styles.scrollButton} ${styles.right}`} onClick={() => scrollContainer(200)}>
                 <FaChevronRight />
             </button>
         </div>

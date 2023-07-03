@@ -1,11 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import data from '../components/myWork/myWork.json'
 import ProjectBio from "../components/projectBio/ProjectBio";
 import Error from "./Error404";
-import Nav from "../components/navBar/Nav";
 import Footer from '../components/Footer/Footer'
+import WorkNav from "../components/navBar/WorkNav";
+import '../App.css'
+import { DarkModeContext } from "../context/ThemeContext";
+
 const Project = () => {
+    const {darkMode} = useContext(DarkModeContext)
     const { id } = useParams();
     const [isError, setIsError] = useState(true);
     const projectParams = data.find((i) => i.id == id);
@@ -15,8 +19,8 @@ const Project = () => {
     }, [projectParams]);
 
     return (
-        <div>
-            <Nav />
+        <div className={darkMode ? "homeBgDark" : ""}>
+            <WorkNav />
             {!isError ? (
                 <ProjectBio
                     params={{

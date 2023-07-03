@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+.homeBgDark{
+  background-color: #0F0E0E;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

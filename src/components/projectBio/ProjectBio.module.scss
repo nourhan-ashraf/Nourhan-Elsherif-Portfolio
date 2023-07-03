@@ -2,15 +2,22 @@
     font-family: 'raleway';
 }
 
-.projectBio {
+@mixin projectBio($bg) {
     font-family: 'raleway';
-    background: rgba(217, 217, 217, 0.20);
+    background: $bg;
     margin-top: 30px;
     padding: 80px 220px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.projectBioLight{
+    @include projectBio(rgba(217, 217, 217, 0.20))
+}
+.projectBioDark {
+    @include projectBio(#171717);
+    color : white;
 }
 
 .logo {
@@ -50,6 +57,7 @@
 
 .descTitle {
     position: absolute;
+    color: black;
     font-size: 21px;
     font-weight: 700;
     top: 44%;
@@ -57,7 +65,11 @@
     transform: translate(-100%, -50%);
 }
 
+
+
+
 .demoTitle {
+    color: black;
     position: absolute;
     font-size: 21px;
     font-weight: 700;
@@ -67,6 +79,7 @@
 }
 
 .partTitle {
+    color: black;
     position: absolute;
     font-size: 21px;
     font-weight: 700;
@@ -76,6 +89,7 @@
 }
 
 .techTitle {
+    color: black;
     position: absolute;
     font-size: 21px;
     font-weight: 700;
@@ -84,38 +98,70 @@
     transform: translate(-100%, -50%);
 }
 
-.desc {
+@mixin desc ($color) {
     margin-top: 50px;
     padding: 50px 220px;
     height: auto;
     padding-bottom: 70px;
     font-size: 20px;
     text-align: justify;
+    color: $color;
+}
+.descLight{
+    @include desc(black)    
+}
+.descDark {
+    @include desc(white)    
 }
 
-.demo {margin-top: 50px;
-    padding: 50px 220px;
-    height: auto;
-    padding-bottom: 70px;
-    font-size: 20px;
-    text-align: justify;}
-
-.myPart {
+@mixin demo($bg) {
     margin-top: 50px;
     padding: 50px 220px;
     height: auto;
     padding-bottom: 70px;
     font-size: 20px;
     text-align: justify;
+    background-color: $bg;
+}
+.demoLight{
+    @include demo(rgba(217, 217, 217, 0.20))
+}
+.demoDark {
+   @include demo(#171717)
 }
 
-.tech {
+@mixin myPart($color) {
     margin-top: 50px;
     padding: 50px 220px;
     height: auto;
     padding-bottom: 70px;
     font-size: 20px;
     text-align: justify;
+    color: $color;
+}
+.myPartLight{
+    @include myPart(black)
+}
+.myPartDark {
+   @include myPart(white)
+}
+
+
+@mixin tech($bg) {
+    margin-top: 50px;
+    padding: 50px 220px;
+    height: auto;
+    padding-bottom: 70px;
+    font-size: 20px;
+    text-align: justify;
+    background-color: $bg;
+}
+.techLight{
+    @include tech(rgba(217, 217, 217, 0.20))
+}
+.techDark {
+   @include tech(#171717);
+   color: white;
 }
 
 .center{

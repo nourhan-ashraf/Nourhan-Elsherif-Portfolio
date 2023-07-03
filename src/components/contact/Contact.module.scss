@@ -6,12 +6,22 @@
     padding-bottom: 100px;
 }
 
+.contactDark {
+    font-family: 'raleway';
+    background: #171717;
+    margin-top: 50px;
+    padding: 50px 220px;
+    padding-bottom: 100px;
+    color: white;
+}
+
 .container {
     position: relative;
 }
 
 
 .title {
+    color: black;
     position: absolute;
     font-size: 23px;
     font-weight: 700;
@@ -36,9 +46,7 @@
     justify-content: center;
     align-items: center;
     gap: 27px;
-    color: black;
 }
-
 
 
 .icon {
@@ -52,11 +60,33 @@
     }
 }
 
+.iconDark {
+    font-size: 30px;
+    z-index: 2;
+    position: relative;
+    color: white;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 .icon2 {
     font-size: 40px;
     z-index: 2;
     position: relative;
     color: black;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.icon2Dark {
+    font-size: 40px;
+    z-index: 2;
+    position: relative;
+    color: white;
 
     &:hover {
         cursor: pointer;

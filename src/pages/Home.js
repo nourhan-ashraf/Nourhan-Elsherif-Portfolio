@@ -1,12 +1,15 @@
-import React, { useRef, useState } from "react"
+import React, { useContext, useRef, useState } from "react"
 import Nav from "../components/navBar/Nav"
 import Bio from "../components/Bio/Bio"
 import WhatIdo from "../components/whatIDo/WhatIdo"
 import Work from "../components/myWork/Work"
 import Contact from "../components/contact/Contact"
+import '../App.css'
+import { DarkModeContext } from "../context/ThemeContext"
 const Home = () => {
     const [visible, setVisible] = useState(false)
     const sectionsRef = useRef({});
+    const {darkMode, toggleModes} = useContext(DarkModeContext)
 
     const handleScroll = (sectionId) => {
         const sectionElement = sectionsRef.current[sectionId];
@@ -32,8 +35,8 @@ const Home = () => {
 
     window.addEventListener('scroll', toggleVisible);
     return (
-        <div>
-            <img onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none', cursor: "pointer", position: "sticky", top: "82%", left: "91%", width: "50px" }} src="/upLight.png" />
+        <div className={darkMode ? "homeBgDark" : ""}>
+            <img onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none', cursor: "pointer", position: "sticky", top: "82%", left: "91%", width: "50px" }} src={darkMode ? "/upDark.png" : "/upLight.png"} />
             <Nav handleScroll={handleScroll} />
             <Bio sectionsRef={sectionsRef} />
             <WhatIdo sectionsRef={sectionsRef} />

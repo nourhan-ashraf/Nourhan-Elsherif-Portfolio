@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from './Bio.module.scss'
+import { DarkModeContext } from "../../context/ThemeContext";
 const Bio = () => {
+    const {darkMode} = useContext(DarkModeContext)
     return (
-        <div className={styles.bio}>
+        <div className={darkMode ? styles.bioDark : styles.bio}>
             <div className={styles.leftPart}>
                 <div className={styles.hiTitle}>Hi, my name is</div>
                 <div className={styles.container}>
@@ -24,7 +26,7 @@ const Bio = () => {
                 <img className={styles.picBg} src="/yellowLight2.svg" />
                 <img className={styles.myPic} src="/me3.svg" />
                 <img className={styles.art} src="/art.png" />
-                <img className={styles.code} src="/codeLight.png" />
+                <img className={styles.code} src={darkMode ? "/codeDark.png" : "/codeLight.png"} />
 
             </div>
         </div>

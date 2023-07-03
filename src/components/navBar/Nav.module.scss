@@ -15,8 +15,19 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 70px;
-    margin-top: 40px;
+    padding: 0 70px;
+    padding-top: 40px;
+    color:black;
+}
+.navDark{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    padding-top: 40px;
+    color:white;
+    background-color: #0F0E0E;
 }
 
 .flexCenter {
@@ -59,6 +70,18 @@
 .resumeBtn {
     background-color: black;
     color: white;
+    width: 124px;
+    height: 43px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'raleway';
+    cursor: pointer;
+    border: none;
+}
+.resumeBtnDark {
+    background-color: white;
+    color: black;
     width: 124px;
     height: 43px;
     border-radius: 10px;

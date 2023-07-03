@@ -19,15 +19,14 @@
   // Example:
   // width: 2000px;
 }
-
-.scroll_button {
+@mixin scrollBtn($color){
   position: absolute;
   top: 50%;
 
   transform: translateY(-50%);
   border: none;
   background-color: transparent;
-  color: #333;
+  color: $color;
   font-size: 24px;
   cursor: pointer;
   outline: none;
@@ -39,4 +38,11 @@
   &.right {
     right: 10px;
   }
+}
+.scrollButton {
+  @include scrollBtn(#333)
+}
+
+.scrollButtonDark {
+  @include scrollBtn(white)
 }

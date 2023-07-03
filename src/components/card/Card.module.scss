@@ -1,8 +1,8 @@
-.card {
+@mixin card($shadow, $bgHover) {
     margin: 0 50px;
     border-radius: 20px;
     padding-bottom: 25px;
-    width: 335px;
+    width: 305px;
     height: 289px;
     border-radius: 25px;
     background: #F7F7F7;
@@ -15,11 +15,18 @@
     font-family: 'raleway';
 
     &:hover {
-        box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: 1px 4px 4px 0px $shadow;
         cursor: pointer;
-        background-color: rgb(242, 242, 242);
+        background-color: $bgHover;
 
     }
+}
+
+.cardLight{
+    @include card(rgba(0, 0, 0, 0.25) , rgb(242, 242, 242))
+}
+.cardDark{
+    @include card(rgba(255, 255, 255, 0.25) , rgb(219, 219, 219))
 }
 
 .image {
