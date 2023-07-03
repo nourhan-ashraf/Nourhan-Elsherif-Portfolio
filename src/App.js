@@ -1,5 +1,5 @@
 import "./App.css";
-import Error from "./pages/Error404";
+import Error from "./pages/Error/Error404";
 import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
 import Project from "./pages/Project";

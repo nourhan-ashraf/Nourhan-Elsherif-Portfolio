@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import data from '../components/myWork/myWork.json'
 import ProjectBio from "../components/projectBio/ProjectBio";
-import Error from "./Error404";
+import Error from "./Error/Error404";
 import Footer from '../components/Footer/Footer'
 import WorkNav from "../components/navBar/WorkNav";
 import '../App.css'
