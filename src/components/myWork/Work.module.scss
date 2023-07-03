@@ -1,7 +1,7 @@
 .work {
     font-family: 'raleway';
     margin-top: 50px;
-    padding: 50px 220px;
+    padding: 10vw;
     height: auto;
     padding-bottom: 70px;
 }
@@ -10,6 +10,9 @@
     position: relative;
 }
 
+.highlight {
+    width: 190px;
+}
 
 .title {
     position: absolute;
@@ -18,4 +21,13 @@
     top: 7.5%;
     left: 12.5%;
     transform: translate(-100%, -50%);
+}
+
+
+@media screen and (max-width:1045px) {
+
+    .highlight {
+        width: 160px;
+    }
+
 }

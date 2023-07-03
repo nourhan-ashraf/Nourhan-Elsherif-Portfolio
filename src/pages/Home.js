@@ -36,7 +36,7 @@ const Home = () => {
     window.addEventListener('scroll', toggleVisible);
     return (
         <div className={darkMode ? "homeBgDark" : ""}>
-            <img onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none', cursor: "pointer", position: "sticky", top: "82%", left: "91%", width: "50px" }} src={darkMode ? "/upDark.png" : "/upLight.png"} />
+            <img onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none', cursor: "pointer", position: "sticky", top: "82%", left: "85%", width: "50px" , zIndex:"10"}} src={darkMode ? "/upDark.png" : "/upLight.png"} />
             <Nav handleScroll={handleScroll} />
             <Bio sectionsRef={sectionsRef} />
             <WhatIdo sectionsRef={sectionsRef} />

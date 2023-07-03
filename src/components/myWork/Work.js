@@ -8,9 +8,8 @@ const Work = ({ sectionsRef }) => {
     const {darkMode} = useContext(DarkModeContext)
     return (
         <div ref={(ref) => (sectionsRef.current['section3'] = ref)} className={styles.work}>
-            <div className={styles.container}>
-                <img src={darkMode ? '/smallHighlightDark.svg' : '/smallHighlight1.svg'} />
-                <div className={styles.title}>My Work</div>
+            <div>
+                <img className={styles.highlight} src={darkMode ? '/workDark.svg' : '/workLight.svg'} />
                 <br />
                 <br />
                 <br />

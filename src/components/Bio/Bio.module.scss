@@ -1,14 +1,16 @@
 @mixin bio {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: start;
     font-family: 'raleway';
     margin: 155px 220px 0 220px;
 }
+
 .bioLight {
     @include bio();
 }
+
 .bioDark {
     @include bio();
     color: white;
@@ -39,7 +41,8 @@
     font-weight: 400;
     line-height: 27px;
 }
-.hiTitle{
+
+.hiTitle {
     margin-bottom: 10px;
     font-size: 25px;
     font-weight: 400;
@@ -49,18 +52,6 @@
     font-size: 20px;
     font-weight: 700;
     font-family: 'raleway';
-
-}
-
-.name {
-    color: #000;
-    font-size: 37px;
-    font-family: 'raleway';
-    font-weight: 600;
-    position: absolute;
-    top: 43%;
-    left: 32%;
-    transform: translate(-20%, -50%);
 
 }
 
@@ -112,4 +103,187 @@
 
 .leftPart {
     margin-top: 30px;
+    margin-right: 50px;
+}
+
+@media screen and (min-width:700px) and (max-width:1045px) {
+    .hiTitle {
+        font-size: 19px;
+    }
+
+    .name {
+        width: 30vw;
+    }
+
+    .subTitle {
+        font-size: 15px;
+    }
+
+    .job {
+        font-size: 15px;
+    }
+
+    .location {
+        font-size: 13px;
+    }
+
+    .locationIcon {
+        width: 18px;
+    }
+
+    .myPic {
+        width: 207px;
+        height: 274px;
+        transform: translate(-20%, -46%);
+
+    }
+
+    .picBg {
+        width: 300px;
+
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:700px) {
+    .hiTitle {
+        font-size: 17px;
+    }
+
+    .name {
+        width: 50vw;
+    }
+
+    .subTitle {
+        font-size: 14px;
+    }
+
+    .job {
+        font-size: 14px;
+    }
+
+    .location {
+        font-size: 12px;
+    }
+
+    .locationIcon {
+        width: 16px;
+    }
+
+    .myPic {
+        width: 187px;
+        height: 254px;
+        transform: translate(-20%, -46%);
+
+    }
+
+    .picBg {
+        width: 270px;
+
+    }
+
+    @mixin bio {
+        flex-direction: column;
+        font-family: 'raleway';
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .bioLight {
+        @include bio();
+    }
+
+    .bioDark {
+        @include bio();
+        color: white;
+    }
+
+    .leftPart {
+        margin-right: 0;
+        margin-top: -50px;
+        margin-bottom: 110px;
+    }
+
+    .art {
+        width: 40px;
+    }
+
+    .code {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .hiTitle {
+        font-size: 17px;
+    }
+
+    .name {
+        width: 50vw;
+    }
+
+    .subTitle {
+        font-size: 14px;
+    }
+
+    .job {
+        font-size: 14px;
+    }
+
+    .location {
+        font-size: 12px;
+    }
+
+    .locationIcon {
+        width: 16px;
+    }
+
+    .myPic {
+        width: 157px;
+        height: 224px;
+        transform: translate(-20%, -46%);
+
+    }
+
+    .picBg {
+        width: 230px;
+
+    }
+
+    @mixin bio {
+        flex-direction: column;
+        font-family: 'raleway';
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .bioLight {
+        @include bio();
+    }
+
+    .bioDark {
+        @include bio();
+        color: white;
+    }
+
+    .leftPart {
+        margin-right: 0;
+        margin-top: -50px;
+        margin-bottom: 110px;
+        margin-left: -90px;
+
+    }
+
+    .art {
+        width: 30px;
+    }
+
+    .code {
+        width: 30px;
+    }
+
+    .picContainer {
+        margin-left: -100px;
+    }
 }

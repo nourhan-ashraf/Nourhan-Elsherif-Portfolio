@@ -22,11 +22,12 @@
     }
 }
 
-.cardLight{
-    @include card(rgba(0, 0, 0, 0.25) , rgb(242, 242, 242))
+.cardLight {
+    @include card(rgba(0, 0, 0, 0.25), rgb(242, 242, 242))
 }
-.cardDark{
-    @include card(rgba(255, 255, 255, 0.25) , rgb(219, 219, 219))
+
+.cardDark {
+    @include card(rgba(255, 255, 255, 0.25), rgb(219, 219, 219))
 }
 
 .image {
@@ -35,7 +36,6 @@
 
 .title {
     line-height: 35px;
-
     color: #000;
     text-align: center;
     font-size: 18px;
@@ -55,10 +55,42 @@
 .btn {
     justify-content: end;
     align-items: end;
+    font-family: 'raleway';
     border: none;
+    text-decoration: underline;
     background-color: transparent;
-    color: #6431DB;
-    font-weight: 600;
-    font-size: 16;
+    color: #8f64f1;
+    font-weight: 700;
+    font-size: 14px;
     cursor: pointer;
+}
+
+
+@media screen and (max-width:1045px) {
+
+    @mixin card($shadow, $bgHover) {
+        margin: 0 30px;
+        width: 255px;
+        height: 239px;
+    }
+
+    .cardLight {
+        @include card(rgba(0, 0, 0, 0.25), rgb(242, 242, 242))
+    }
+
+    .cardDark {
+        @include card(rgba(255, 255, 255, 0.25), rgb(219, 219, 219))
+    }
+
+    .title {
+        font-size: 15px;
+    }
+
+    .desc {
+        font-size: 10px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
 }

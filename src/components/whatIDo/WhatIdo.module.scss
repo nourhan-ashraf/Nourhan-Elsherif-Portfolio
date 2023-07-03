@@ -2,11 +2,13 @@
     background: $bg;
     font-family: 'raleway';
     margin-top: 100px;
-    padding: 100px 220px;
+    padding: 10vw;
 }
-.whatLight{
+
+.whatLight {
     @include what(rgba(217, 217, 217, 0.20))
 }
+
 .whatDark {
     @include what(#171717);
     color: white;
@@ -16,6 +18,9 @@
     position: relative;
 }
 
+.highlight {
+    width: 190px;
+}
 
 .title {
     position: absolute;
@@ -36,4 +41,16 @@
     justify-content: start;
     flex-shrink: 0;
     margin-left: 30px;
+}
+
+@media screen and (max-width:1045px) {
+
+    .description {
+        font-size: 17px;
+    }
+
+    .highlight {
+        width: 160px;
+    }
+
 }

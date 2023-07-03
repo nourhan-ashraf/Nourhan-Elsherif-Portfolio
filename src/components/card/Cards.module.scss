@@ -4,6 +4,7 @@
   overflow-x: hidden;
   padding-right: 50px;
   padding-left: 50px;
+  font-family: 'raleway';
 }
 
 .scrollable {
@@ -19,7 +20,8 @@
   // Example:
   // width: 2000px;
 }
-@mixin scrollButton($color){
+
+@mixin scrollButton($color) {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -38,10 +40,24 @@
     right: 10px;
   }
 }
+
 .scrollButtonLight {
   @include scrollButton(#333)
 }
 
 .scrollButtonDark {
   @include scrollButton(white)
+}
+
+
+@media screen and (max-width:700px) {
+
+  .container {
+    position: relative;
+    width: 75%;
+    overflow-x: hidden;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
 }

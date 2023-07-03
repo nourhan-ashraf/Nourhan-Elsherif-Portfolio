@@ -2,13 +2,15 @@
     font-family: 'raleway';
     background: $bg;
     margin-top: 50px;
-    padding: 50px 220px;
+    padding: 5vw 10vw;
     padding-bottom: 100px;
     color: $color;
 }
-.contactLight{
+
+.contactLight {
     @include contact(black, rgba(217, 217, 217, 0.20))
 }
+
 .contactDark {
     @include contact(white, #171717)
 }
@@ -17,6 +19,9 @@
     position: relative;
 }
 
+.highlight {
+    width: 190px;
+}
 
 .title {
     color: black;
@@ -57,9 +62,11 @@
         cursor: pointer;
     }
 }
+
 .iconLight {
     @include icon(black)
 }
+
 .iconDark {
     @include icon(white)
 }
@@ -74,9 +81,11 @@
         cursor: pointer;
     }
 }
-.icon2Light{
+
+.icon2Light {
     @include icon2(black)
 }
+
 .icon2Dark {
     @include icon2(white)
 }
@@ -139,4 +148,59 @@
     background-color: rgba(246, 237, 65, 0.5);
     opacity: 1;
     z-index: 1;
+}
+
+@media screen and (max-width:1045px) {
+
+    .highlight {
+        width: 160px;
+    }
+
+    .title {
+        color: black;
+        position: absolute;
+        font-size: 16px;
+        font-weight: 700;
+        top: 47%;
+        left: 12%;
+        transform: translate(-100%, -50%);
+    }
+
+    .subTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .icons {
+        gap: 17px;
+    }
+
+
+    @mixin icon($color) {
+        font-size: 20px;
+    }
+
+    .iconLight {
+        @include icon(black)
+    }
+
+    .iconDark {
+        @include icon(white)
+    }
+
+    @mixin icon2($color) {
+        font-size: 20px;
+    }
+
+    .icon2Light {
+        @include icon2(black)
+    }
+
+    .icon2Dark {
+        @include icon2(white)
+    }
+
 }

@@ -13,9 +13,8 @@ const Contact = ({ sectionsRef }) => {
     return (
         <div ref={(ref) => (sectionsRef.current['section4'] = ref)} >
             <div className={darkMode ? styles.contactDark : styles.contactLight} >
-                <div className={styles.container}>
-                    <img src={darkMode ? '/smallHighlightDark.svg' : '/smallHighlight1.svg'} />
-                    <div className={styles.title}>Contact</div>
+                <div>
+                    <img className={styles.highlight} src={darkMode ? '/contactDark.svg' : '/contactLight.svg'} />
                 </div>
                 <br />
                 <div className={styles.subTitle}>Get in touch with me on:</div>

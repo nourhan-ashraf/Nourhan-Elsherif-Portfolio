@@ -17,12 +17,14 @@
     align-items: center;
     padding: 0 70px;
     padding-top: 40px;
-    color:$color;
+    color: $color;
 }
-.navLight{
+
+.navLight {
     @include nav(black)
 }
-.navDark{
+
+.navDark {
     @include nav(white);
     background-color: #0F0E0E;
 }
@@ -51,7 +53,7 @@
     }
 }
 
-.listItemClicked {
+/*.listItemClicked {
     list-style-type: none;
     font-family: 'raleway';
     font-weight: 700;
@@ -62,7 +64,7 @@
     &:hover {
         cursor: pointer;
     }
-}
+}*/
 
 @mixin resumeBtn($bg) {
     background-color: $bg;
@@ -76,10 +78,113 @@
     cursor: pointer;
     border: none;
 }
-.resumeBtnLight{
+
+.resumeBtnLight {
     @include resumeBtn(black)
 }
+
 .resumeBtnDark {
     @include resumeBtn(white);
     color: black;
+}
+
+@media screen and (min-width:700px) and (max-width:1045px) {
+    .darkIcon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .backIcon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .listItem {
+        font-size: 16px;
+
+        &:hover {
+            font-size: 16px;
+        }
+    }
+
+    .flexCenter {
+        gap: 35px;
+    }
+
+    @mixin resumeBtn($bg) {
+        background-color: $bg;
+        width: 104px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .resumeBtnLight {
+        @include resumeBtn(black)
+    }
+
+    .resumeBtnDark {
+        @include resumeBtn(white);
+        color: black;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    @mixin nav($color) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        padding-top: 40px;
+        color: $color;
+    }
+
+    .navLight {
+        @include nav(black)
+    }
+
+    .navDark {
+        @include nav(white);
+        background-color: #0F0E0E;
+    }
+
+    .darkIcon {
+        width: 27px;
+        height: 27px;
+    }
+
+    .backIcon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .listItem {
+        font-size: 12px;
+
+        &:hover {
+            font-size: 12px;
+        }
+    }
+
+    .flexCenter {
+        gap: 20px;
+    }
+
+    @mixin resumeBtn($bg) {
+        background-color: $bg;
+        width: 70px;
+        height: 26px;
+        font-size: 12px;
+        margin-left: 20px;
+    }
+
+    .resumeBtnLight {
+        @include resumeBtn(black)
+    }
+
+    .resumeBtnDark {
+        @include resumeBtn(white);
+        color: black;
+    }
 }

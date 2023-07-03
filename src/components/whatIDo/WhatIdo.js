@@ -6,10 +6,8 @@ const WhatIdo = ({ sectionsRef }) => {
     const {darkMode} = useContext(DarkModeContext)
     return (
         <div ref={(ref) => (sectionsRef.current['section2'] = ref)} className={darkMode ? styles.whatDark : styles.whatLight}>
-            <div className={styles.container}>
-                <img src={darkMode ? '/smallHighlightDark.svg' : '/smallHighlight1.svg'} />
-                <div className={styles.title}>What I do</div>
-
+            <div>
+                <img className={styles.highlight} src={darkMode ? '/whatDark.svg' : '/whatLight.svg'} />
             </div>
             <br />
             <p className={styles.description}>

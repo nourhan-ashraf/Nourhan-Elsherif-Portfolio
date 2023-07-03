@@ -7,10 +7,9 @@ const Bio = () => {
         <div className={darkMode ? styles.bioDark : styles.bioLight}>
             <div className={styles.leftPart}>
                 <div className={styles.hiTitle}>Hi, my name is</div>
-                <div className={styles.container}>
-                    <img width="65%" src="./highlight2.svg" />
-                    <div className={styles.name}>Nourhan Elsherif</div></div>
-
+                <div>
+                    <img className={styles.name} src="./name.svg" />
+                    </div>
                 <div className={styles.subTitle}>I’m a&nbsp;
                     <div className={styles.job}> Front-end Engineer</div>
                 </div>

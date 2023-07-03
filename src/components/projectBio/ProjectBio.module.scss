@@ -6,26 +6,31 @@
     font-family: 'raleway';
     background: $bg;
     margin-top: 30px;
-    padding: 80px 220px;
+    padding: 5vw 10vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.projectBioLight{
+
+.projectBioLight {
     @include projectBio(rgba(217, 217, 217, 0.20))
 }
+
 .projectBioDark {
     @include projectBio(#171717);
-    color : white;
+    color: white;
 }
 
 .logo {
     width: 65px;
 }
 
-.name {
+.highlight {
+    width: 190px;
+}
 
+.name {
     font-size: 28px;
     font-weight: bold;
     padding-bottom: 10px;
@@ -35,13 +40,12 @@
     font-size: 20px;
     font-weight: 500;
     padding-bottom: 10px;
-
 }
 
 .link {
     font-size: 15px;
     font-weight: 600;
-    color: #6431DB;
+    color: #8f64f1;
     border: none;
     text-decoration: underline;
     background-color: transparent;
@@ -100,75 +104,162 @@
 
 @mixin desc ($color) {
     margin-top: 50px;
-    padding: 50px 220px;
+    padding: 5vw 10vw;
     height: auto;
     padding-bottom: 70px;
     font-size: 20px;
     text-align: justify;
     color: $color;
 }
-.descLight{
-    @include desc(black)    
+
+.descLight {
+    @include desc(black)
 }
+
 .descDark {
-    @include desc(white)    
+    @include desc(white)
 }
 
 @mixin demo($bg) {
     margin-top: 50px;
-    padding: 50px 220px;
+    padding: 5vw 10vw;
     height: auto;
     padding-bottom: 70px;
     font-size: 20px;
     text-align: justify;
     background-color: $bg;
 }
-.demoLight{
+
+.demoLight {
     @include demo(rgba(217, 217, 217, 0.20))
 }
+
 .demoDark {
-   @include demo(#171717)
+    @include demo(#171717)
 }
 
 @mixin myPart($color) {
     margin-top: 50px;
-    padding: 50px 220px;
+    padding: 5vw 10vw;
     height: auto;
     padding-bottom: 70px;
     font-size: 20px;
     text-align: justify;
     color: $color;
 }
-.myPartLight{
+
+.myPartLight {
     @include myPart(black)
 }
+
 .myPartDark {
-   @include myPart(white)
+    @include myPart(white)
 }
 
 
 @mixin tech($bg) {
     margin-top: 50px;
-    padding: 50px 220px;
+    padding: 5vw 10vw;
     height: auto;
     padding-bottom: 70px;
     font-size: 20px;
     text-align: justify;
     background-color: $bg;
 }
-.techLight{
+
+.techLight {
     @include tech(rgba(217, 217, 217, 0.20))
 }
+
 .techDark {
-   @include tech(#171717);
-   color: white;
+    @include tech(#171717);
+    color: white;
 }
 
-.center{
+
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+
+
+@media screen and (max-width:1045px) {
+    .highlight {
+        width: 160px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .subTitle {
+        font-size: 15px;
+    }
+
+    .link {
+        font-size: 12px;
+    }
+
+    @mixin desc ($color) {
+        font-size: 17px;
+    }
+
+    .descLight {
+        @include desc(black)
+    }
+
+    .descDark {
+        @include desc(white)
+    }
+
+    @mixin demo($bg) {
+        font-size: 17px;
+    }
+
+    .demoLight {
+        @include demo(rgba(217, 217, 217, 0.20))
+    }
+
+    .demoDark {
+        @include demo(#171717)
+    }
+
+    @mixin myPart($color) {
+        font-size: 17px;
+    }
+
+    .myPartLight {
+        @include myPart(black)
+    }
+
+    .myPartDark {
+        @include myPart(white)
+    }
+
+
+    @mixin tech($bg) {
+        font-size: 17px;
+    }
+
+    .techLight {
+        @include tech(rgba(217, 217, 217, 0.20))
+    }
+
+    .techDark {
+        @include tech(#171717);
+        color: white;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
-.video{
-    width: 70%;
-}
+.video {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
