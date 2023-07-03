@@ -3,11 +3,10 @@ import styles from './ProjectBio.module.scss'
 import { Link } from "react-router-dom";
 import { ImArrowUpRight2 } from 'react-icons/im'
 import { DarkModeContext } from "../../context/ThemeContext";
-import YouTube from 'react-youtube';
 
 const ProjectBio = ({ params }) => {
-    const {darkMode} = useContext(DarkModeContext)
-    
+    const { darkMode } = useContext(DarkModeContext)
+
     return (
         <div className={styles.project}>
 
@@ -17,36 +16,39 @@ const ProjectBio = ({ params }) => {
                 <div className={styles.name}>{params.name}</div>
                 <div className={styles.subTitle}>{params.subTitle}</div>
                 <Link to={params.link} target="_blank"><button className={styles.link}>{params.web ? "View website" : "View design on behance"} <ImArrowUpRight2 /></button></Link>
+                <Link to={params.github} target="_blank"><button className={styles.link}>{params.github ? "View project on github" : ""} {params.github ? <ImArrowUpRight2 /> : ""} </button></Link>
+
+
             </div>
 
             {params.desc && <div className={darkMode ? styles.descDark : styles.descLight}>
                 <div>
-                    <img className={styles.highlight} src={darkMode? '/descDark.svg' : '/descDark.svg'} />
+                    <img className={styles.highlight} src={darkMode ? '/descDark.svg' : '/descLight.svg'} />
                 </div>
                 <p dangerouslySetInnerHTML={{ __html: params.desc }}></p>
             </div>}
 
             {params.demo && <div className={darkMode ? styles.demoDark : styles.demoLight}>
                 <div>
-                    <img className={styles.highlight} src={darkMode? '/demoDark.svg' : '/demoLight.svg'} />
+                    <img className={styles.highlight} src={darkMode ? '/demoDark.svg' : '/demoLight.svg'} />
                 </div>
                 <br />
                 <div className={styles.center}>
-                <iframe  className={styles.video} controls src={"https://drive.google.com/uc?id=1shebb16I6g27druutkGtjkKgzBcWjfyU"} />
+                    <iframe className={styles.video} controls src={params.demo} />
                 </div>
 
             </div>}
 
             {params.myPart && <div className={darkMode ? styles.myPartDark : styles.myPartLight}>
                 <div>
-                    <img className={styles.highlight} src={darkMode? '/partDark.svg' : '/[partLight].svg'} />
+                    <img className={styles.highlight} src={darkMode ? '/partDark.svg' : '/partLight.svg'} />
                 </div>
                 <p dangerouslySetInnerHTML={{ __html: params.myPart }}></p>
             </div>}
 
             {params.tech && <div className={darkMode ? styles.techDark : styles.techLight}>
                 <div>
-                    <img className={styles.highlight} src={darkMode? '/techDark.svg' : '/techLight.svg'} />
+                    <img className={styles.highlightTech} src={darkMode ? '/techDark.svg' : '/techLight.svg'} />
                 </div>
                 <p dangerouslySetInnerHTML={{ __html: params.tech }}></p>
             </div>}

@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import styles from './Work.module.scss'
-import data from './myWork.json'
 import Cards from "../card/Cards";
 import { DarkModeContext } from "../../context/ThemeContext";
 

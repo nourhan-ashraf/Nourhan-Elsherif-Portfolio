@@ -13,7 +13,7 @@ const Bio = () => {
                 <div className={styles.subTitle}>I’m a&nbsp;
                     <div className={styles.job}> Front-end Engineer</div>
                 </div>
-                <div className={styles.subTitle}>who has passion for Graphic Design and Digital Painting.</div>
+                <div className={styles.subTitle}>who possesses a deep passion for various forms of art and design.</div>
                 <br />
                 <div className={styles.centerLoc}>
                     <img className={styles.locationIcon} src="/location.png" /> &nbsp;

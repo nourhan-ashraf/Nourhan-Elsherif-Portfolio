@@ -35,6 +35,7 @@ const Project = () => {
                         logo: projectParams.logo,
                         link: projectParams.link,
                         web: projectParams.website,
+                        github: projectParams.github,
                     }}
                 />
             ) : (

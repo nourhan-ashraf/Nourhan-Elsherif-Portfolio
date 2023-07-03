@@ -40,6 +40,7 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 27px;
+    max-width: 400px;
 }
 
 .hiTitle {
@@ -103,7 +104,7 @@
 
 .leftPart {
     margin-top: 30px;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 @media screen and (min-width:700px) and (max-width:1045px) {
@@ -146,7 +147,7 @@
 
 @media screen and (min-width:400px) and (max-width:700px) {
     .hiTitle {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .name {
@@ -154,15 +155,15 @@
     }
 
     .subTitle {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .job {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .location {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .locationIcon {
