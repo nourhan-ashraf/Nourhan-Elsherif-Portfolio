@@ -4,7 +4,7 @@ import { DarkModeContext } from "../../context/ThemeContext";
 const Bio = () => {
     const {darkMode} = useContext(DarkModeContext)
     return (
-        <div className={darkMode ? styles.bioDark : styles.bio}>
+        <div className={darkMode ? styles.bioDark : styles.bioLight}>
             <div className={styles.leftPart}>
                 <div className={styles.hiTitle}>Hi, my name is</div>
                 <div className={styles.container}>

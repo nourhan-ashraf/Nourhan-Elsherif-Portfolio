@@ -1,4 +1,4 @@
-.bio {
+@mixin bio {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -6,13 +6,11 @@
     font-family: 'raleway';
     margin: 155px 220px 0 220px;
 }
+.bioLight {
+    @include bio();
+}
 .bioDark {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-    font-family: 'raleway';
-    margin: 155px 220px 0 220px;
+    @include bio();
     color: white;
 }
 

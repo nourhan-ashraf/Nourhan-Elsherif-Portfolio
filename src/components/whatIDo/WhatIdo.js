@@ -5,7 +5,7 @@ import { DarkModeContext } from "../../context/ThemeContext";
 const WhatIdo = ({ sectionsRef }) => {
     const {darkMode} = useContext(DarkModeContext)
     return (
-        <div ref={(ref) => (sectionsRef.current['section2'] = ref)} className={darkMode ? styles.whatDark : styles.what}>
+        <div ref={(ref) => (sectionsRef.current['section2'] = ref)} className={darkMode ? styles.whatDark : styles.whatLight}>
             <div className={styles.container}>
                 <img src={darkMode ? '/smallHighlightDark.svg' : '/smallHighlight1.svg'} />
                 <div className={styles.title}>What I do</div>

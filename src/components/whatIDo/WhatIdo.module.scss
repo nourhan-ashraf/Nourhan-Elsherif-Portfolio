@@ -1,14 +1,14 @@
-.what {
-    background: rgba(217, 217, 217, 0.20);
+@mixin what($bg) {
+    background: $bg;
     font-family: 'raleway';
     margin-top: 100px;
     padding: 100px 220px;
 }
+.whatLight{
+    @include what(rgba(217, 217, 217, 0.20))
+}
 .whatDark {
-    background: #171717;
-    font-family: 'raleway';
-    margin-top: 100px;
-    padding: 100px 220px;
+    @include what(#171717);
     color: white;
 }
 

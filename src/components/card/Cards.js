@@ -24,10 +24,10 @@ const ScrollableContainer = () => {
             <div className={styles.scrollable} ref={containerRef}>
                 <WorkCard />
             </div>
-            <button className={`${darkMode ? styles.scrollButtonDark : styles.scrollButton} ${styles.left}`} onClick={() => scrollContainer(-200)}>
+            <button className={`${darkMode ? styles.scrollButtonDark : styles.scrollButtonLight} ${styles.left}`} onClick={() => scrollContainer(-200)}>
                 <FaChevronLeft />
             </button>
-            <button className={`${darkMode ? styles.scrollButtonDark : styles.scrollButton} ${styles.right}`} onClick={() => scrollContainer(200)}>
+            <button className={`${darkMode ? styles.scrollButtonDark : styles.scrollButtonLight} ${styles.right}`} onClick={() => scrollContainer(200)}>
                 <FaChevronRight />
             </button>
         </div>

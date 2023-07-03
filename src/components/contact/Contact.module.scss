@@ -1,18 +1,16 @@
-.contact {
+@mixin contact($color, $bg) {
     font-family: 'raleway';
-    background: rgba(217, 217, 217, 0.20);
+    background: $bg;
     margin-top: 50px;
     padding: 50px 220px;
     padding-bottom: 100px;
+    color: $color;
 }
-
+.contactLight{
+    @include contact(black, rgba(217, 217, 217, 0.20))
+}
 .contactDark {
-    font-family: 'raleway';
-    background: #171717;
-    margin-top: 50px;
-    padding: 50px 220px;
-    padding-bottom: 100px;
-    color: white;
+    @include contact(white, #171717)
 }
 
 .container {
@@ -49,48 +47,38 @@
 }
 
 
-.icon {
+@mixin icon($color) {
     font-size: 30px;
     z-index: 2;
     position: relative;
-    color: black;
+    color: $color;
 
     &:hover {
         cursor: pointer;
     }
 }
-
+.iconLight {
+    @include icon(black)
+}
 .iconDark {
-    font-size: 30px;
-    z-index: 2;
-    position: relative;
-    color: white;
-
-    &:hover {
-        cursor: pointer;
-    }
+    @include icon(white)
 }
 
-.icon2 {
+@mixin icon2($color) {
     font-size: 40px;
     z-index: 2;
     position: relative;
-    color: black;
+    color: $color;
 
     &:hover {
         cursor: pointer;
     }
 }
-
+.icon2Light{
+    @include icon2(black)
+}
 .icon2Dark {
-    font-size: 40px;
-    z-index: 2;
-    position: relative;
-    color: white;
-
-    &:hover {
-        cursor: pointer;
-    }
+    @include icon2(white)
 }
 
 .icon_container {

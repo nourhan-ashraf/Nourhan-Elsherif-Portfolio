@@ -12,7 +12,7 @@ const Contact = ({ sectionsRef }) => {
     const {darkMode} = useContext(DarkModeContext)
     return (
         <div ref={(ref) => (sectionsRef.current['section4'] = ref)} >
-            <div className={darkMode ? styles.contactDark : styles.contact} >
+            <div className={darkMode ? styles.contactDark : styles.contactLight} >
                 <div className={styles.container}>
                     <img src={darkMode ? '/smallHighlightDark.svg' : '/smallHighlight1.svg'} />
                     <div className={styles.title}>Contact</div>
@@ -23,28 +23,28 @@ const Contact = ({ sectionsRef }) => {
                 <div className={styles.icons}>
                     <Link to="https://github.com/nourhan-ashraf/" target="_blank" rel="noopener noreferrer">
                         <div className={styles.icon_container}>
-                            <BsGithub className={darkMode ? styles.iconDark : styles.icon} />
+                            <BsGithub className={darkMode ? styles.iconDark : styles.iconLight} />
                         </div>
                     </Link>
                     <Link to="https://www.linkedin.com/in/nourhan-elsherif/" target="_blank" rel="noopener noreferrer">
                         <div className={styles.icon_container}>
-                            <BsLinkedin className={darkMode ? styles.iconDark : styles.icon} />
+                            <BsLinkedin className={darkMode ? styles.iconDark : styles.iconLight} />
                         </div>
                     </Link>
                     <Link to="https://www.behance.net/nourhan117461" target="_blank" rel="noopener noreferrer">
                         <div className={styles.icon_container}>
-                            <ImBehance2 className={darkMode ? styles.iconDark : styles.icon} />
+                            <ImBehance2 className={darkMode ? styles.iconDark : styles.iconLight} />
                         </div>
                     </Link>
                     <Link to="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nourhan.elsherif20@gmail.com" target="_blank" rel="noopener noreferrer">
                         <div className={styles.icon_container2}>
 
-                            <CgMail className={darkMode ? styles.icon2Dark : styles.icon2} />
+                            <CgMail className={darkMode ? styles.icon2Dark : styles.icon2Light} />
                         </div>
                     </Link>
                     <Link to="https://www.upwork.com/freelancers/~017d2207721ba6cc32" target="_blank" rel="noopener noreferrer">
                         <div className={styles.icon_container2}>
-                            <SiUpwork className={darkMode ? styles.icon2Dark : styles.icon2} />
+                            <SiUpwork className={darkMode ? styles.icon2Dark : styles.icon2Light} />
                         </div>
                     </Link>
                 </div>

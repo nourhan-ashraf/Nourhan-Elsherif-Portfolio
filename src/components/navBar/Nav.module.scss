@@ -10,23 +10,20 @@
     cursor: pointer;
 }
 
-.nav {
+@mixin nav($color) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 70px;
     padding-top: 40px;
-    color:black;
+    color:$color;
+}
+.navLight{
+    @include nav(black)
 }
 .navDark{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 70px;
-    padding-top: 40px;
-    color:white;
+    @include nav(white);
     background-color: #0F0E0E;
 }
 
@@ -67,8 +64,8 @@
     }
 }
 
-.resumeBtn {
-    background-color: black;
+@mixin resumeBtn($bg) {
+    background-color: $bg;
     color: white;
     width: 124px;
     height: 43px;
@@ -79,15 +76,10 @@
     cursor: pointer;
     border: none;
 }
+.resumeBtnLight{
+    @include resumeBtn(black)
+}
 .resumeBtnDark {
-    background-color: white;
+    @include resumeBtn(white);
     color: black;
-    width: 124px;
-    height: 43px;
-    border-radius: 10px;
-    font-size: 22px;
-    font-weight: 600;
-    font-family: 'raleway';
-    cursor: pointer;
-    border: none;
 }
