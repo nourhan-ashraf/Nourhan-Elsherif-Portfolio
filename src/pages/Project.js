@@ -7,6 +7,7 @@ import Footer from '../components/Footer/Footer'
 import WorkNav from "../components/navBar/WorkNav";
 import '../App.css'
 import { DarkModeContext } from "../context/ThemeContext";
+import ScrollToTop from "../ScrollToTop";
 
 const Project = () => {
     const {darkMode} = useContext(DarkModeContext)
@@ -20,6 +21,7 @@ const Project = () => {
 
     return (
         <div className={darkMode ? "homeBgDark" : ""}>
+            <ScrollToTop />
             <WorkNav />
             {!isError ? (
                 <ProjectBio

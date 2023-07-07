@@ -9,7 +9,7 @@
         "technologies":"For the UI Design part we used <b>Figma</b>. <br /><br />For the Web application development we used <b>MERN stack</b> with <b>websockets</b> for the real-time communication and <b>cloudinary</b> as a cloud.  <br /><br />We used <b>Chakra UI</b> as CSS framework.",
         "img": "/bt.png",
         "logo": "/btLogo.svg",
-        "link": "https://bandingtogether.vercel.app/",
+        "link": "",
         "website":true,
         "github":""
     },

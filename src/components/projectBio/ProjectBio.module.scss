@@ -55,6 +55,15 @@
     align-items: center;
     cursor: pointer;
 }
+.inProgress{
+    font-size: 15px;
+    font-weight: 600;
+    color: #8f64f1;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
 .container {
     position: relative;
@@ -205,6 +214,10 @@
     .link {
         font-size: 12px;
     }
+    .inProgress{
+        font-size: 12px;
+    }
+    
 
     @mixin desc ($color) {
         font-size: 17px;
