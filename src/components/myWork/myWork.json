@@ -17,11 +17,11 @@
         "id": 2,
         "name": "Job search",
         "subTitle": "A job search using an API",
-        "description": "The goal of this project was to create a job search website using an API with React frontend library. The website provides various functionalities to enhance the user experience. Users have the ability to search for jobs using keywords or location. Additionally, users are able to filter their search to display only full-time jobs. The job listings include relevant information such as company name, location, logo, and posted time. When a user selects a job, they are able to view detailed job descriptions and information on how to apply.",
-        "demo":"",
+        "description": "The goal of this project was to create a job search website using an API with React frontend library. The website provides various functionalities to enhance the user experience. Users have the ability to search for jobs using keywords or Job title. The job listings include relevant information such as company name, location, tags, and posted time. When a user selects a job, they are able to view detailed job descriptions and information on how to apply.",
+        "demo":"https://drive.google.com/uc?id=1vEy1s4wM59OAtkjPOxeXqaMmimvLBAj0",
         "myPart": "As the sole developer, I successfully completed the job search website using React JS front-end library. With my expertise in frontend engineering, I developed the website, ensuring its functionality and user experience met the project goals.",
         "technologies":"For the Web application development I used <b>React JS</b>.<br /><br />I used <b>Bootstrap</b> and <b>Chakra UI</b> as CSS frameworks.",
-        "img": "/bt.png",
+        "img": "/mockuper2.png",
         "logo":"",
         "link": "https://github-job-search.vercel.app/",
         "website":true,
@@ -51,7 +51,7 @@
         "technologies":"For the UI Design part I used <b>Figma</b>.<br /><br />For the Web application development I used <b>React JS</b>.",
         "img": "/mockuper.png",
         "logo":"",
-        "link": "https://github.com/nourhan-ashraf/Portfolio",
+        "link": "https://portfolio-mu-eosin-12.vercel.app/",
         "website":true,
         "github":"https://github.com/nourhan-ashraf/Portfolio"
     }
