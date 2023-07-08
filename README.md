@@ -9,6 +9,18 @@ My website portfolio is a showcase of my work, designed and developed by me usin
 <br />
 <br />
 
+## Technologies used in this website
+
+React JS for web application development.
+
+Figma for the UI design.
+
+<img src="https://github.com/nourhan-ashraf/My-Portfolio/assets/66208099/99ac6fac-6a02-4120-9406-c001db1bf709" width="70px" />
+<img src="https://github.com/nourhan-ashraf/My-Portfolio/assets/66208099/50b91f29-5925-4f1c-a82f-c6407b759da5" width="60px" />
+
+<br />
+<br />
+
 ## Contact
 Email: nourhan.elsherif20@gmail.com
 
