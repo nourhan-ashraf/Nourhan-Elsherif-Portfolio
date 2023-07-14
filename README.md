@@ -1,6 +1,6 @@
 # Nourhan's Portfolio
 
-<img src="https://github.com/nourhan-ashraf/Portfolio/assets/66208099/423f96e7-4936-4e00-9291-066155b3bbf1" width="1000px" />
+![mockuper](https://github.com/nourhan-ashraf/My-Portfolio/assets/66208099/7a7916af-9632-4c82-a20e-5851cb21d8a5)
 
 ## Description
 
@@ -15,8 +15,10 @@ React JS for web application development.
 
 Figma for the UI design.
 
-<img src="https://github.com/nourhan-ashraf/My-Portfolio/assets/66208099/99ac6fac-6a02-4120-9406-c001db1bf709" width="70px" />
-<img src="https://github.com/nourhan-ashraf/My-Portfolio/assets/66208099/50b91f29-5925-4f1c-a82f-c6407b759da5" width="60px" />
+
+<img src="https://github.com/nourhan-ashraf/My-Portfolio/assets/66208099/619659e2-c572-4e74-9cdc-1f0f00e64659" width="40px" /> &nbsp;&nbsp;
+<img src="https://github.com/nourhan-ashraf/My-Portfolio/assets/66208099/24ef3661-211e-4030-9613-5c1775df24ed" width="90px" />
+
 
 <br />
 <br />
