@@ -12,7 +12,7 @@ const WorkCard = () => {
       {data.map((i) => {
         return (
           <div className={darkMode ? styles.cardDark : styles.cardLight}>
-            <a href={i.img} target="_blank">
+            <a style={{cursor:'auto'}} href={i.img} target="_blank">
               <img className={styles.image} src={i.img} alt="project mockup image" />
             </a>
             <div className={styles.title}>{i.name}</div>
