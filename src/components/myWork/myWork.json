@@ -18,7 +18,7 @@
         "name": "Job search",
         "subTitle": "A job search using an API",
         "description": "The aim of this project was to develop a job search website using a React frontend library integrated with an API. The website offers multiple functionalities to improve the user experience. Users can search for jobs based on keywords or job titles. The job listings provide important details such as company name, location, tags, and posting time. When a user selects a job, they can access comprehensive job descriptions and instructions on how to apply.I improved the user interface in the most recent update to resemble the Wuzzuf interface. Users now have the choice to either create an account or log in, enabling them to customize their profiles by adding personal information. Additionally, they have the ability to save job listings for future reference.",        
-        "demo":"https://drive.google.com/uc?id=1mdi7OcXjw8F2BV882FCxPpAtmDt-dMlR",
+        "demo":"https://drive.google.com/uc?id=1SA0SLEkiRPpeG59lcLAmh51YT5nrQrgF",
         "myPart": "As the sole developer, I successfully completed the job search website using React JS front-end library. With my expertise in frontend engineering, I developed the website, ensuring its functionality and user experience met the project goals.",
         "technologies":"<b>React JS</b> for the Web application development. <br /><br />I used <b>Bootstrap</b> and <b>Chakra UI</b> as CSS frameworks. <br /> <br /> For authentication, <b>Firebase</b> is utilized, serving as a serverless database and storage solution.",
         "img": "/wuzzuf.png",
