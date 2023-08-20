@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import styles from './Contact.module.scss'
-import { BsGithub, BsLinkedin } from 'react-icons/bs'
+import { BsGithub, BsLinkedin, BsMedium } from 'react-icons/bs'
 import { ImBehance2 } from 'react-icons/im'
 import { SiUpwork } from 'react-icons/si'
 import { CgMail } from 'react-icons/cg'
@@ -41,9 +41,9 @@ const Contact = ({ sectionsRef }) => {
                             <CgMail className={darkMode ? styles.icon2Dark : styles.icon2Light} />
                         </div>
                     </Link>
-                    <Link to="https://www.upwork.com/freelancers/~017d2207721ba6cc32" target="_blank" rel="noopener noreferrer">
+                    <Link to="https://medium.com/@nourhan.elsherif" target="_blank" rel="noopener noreferrer">
                         <div className={styles.icon_container2}>
-                            <SiUpwork className={darkMode ? styles.icon2Dark : styles.icon2Light} />
+                            <BsMedium className={darkMode ? styles.icon2Dark : styles.icon2Light} />
                         </div>
                     </Link>
                 </div>

@@ -56,7 +56,7 @@ const [contactClicked, setContactClicked] = useState(false)*/}
                     <li onClick={handleContactClick} className={styles.listItem}>Contact</li>
                 </ul>
             </div>
-            <Link to="https://drive.google.com/file/d/1IL2AkxVNeC6slSZkyiy7qxyzyFatlsJS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <Link to="https://drive.google.com/file/d/1l0jnsMDlftpUq6IMi5HQbt1B5eNL9MbH/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <button className={darkMode ? styles.resumeBtnDark : styles.resumeBtnLight}>Resume</button>
             </Link>
         </div>
