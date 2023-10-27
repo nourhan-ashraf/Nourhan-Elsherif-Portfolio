@@ -28,6 +28,20 @@
         "github":""
     },
     {
+        "id": 4,
+        "name": "Hangman Game",
+        "subTitle": "A simple game using Typescript",
+        "description": "The Hangman Game is a web-based word-guessing game designed for entertainment. It offers users the opportunity to play in both Arabic and English languages and provides options for dark and light modes to suit different preferences. The game is not limited to a single category but offers four different topics, including general words, movies, food, and countries. Players can enjoy a fun and challenging experience while playing and expanding their word knowledge. <br /><br /> <strong>Features:</strong> <br /><ul><li><strong>Multilingual Support:</strong>  The game is available in both Arabic and English, allowing players to choose their preferred language for an immersive experience.</li><br /><li><strong>Dark and Light Modes:</strong> Users can switch between dark and light themes to enhance gameplay comfort.</li><br /><li><strong>Multiple Categories:</strong> General, Food, Movies, and Countries.</li><br /><li><strong>Randomized Words:</strong> The game offers a wide variety of words within each category to keep the gameplay fresh and challenging.</li><br /><li><strong>Responsive Design:</strong> Enjoy a seamless experience on both desktop and mobile devices.</li></ul>",        
+        "demo":"https://drive.google.com/uc?id=1pA1qg5q1tpW3wlroCqC5nxc3Ixl-lbHX",
+        "myPart": "As the sole developer, I successfully completed the job search website using React JS front-end library and Typescript. With my expertise in frontend engineering, I developed the website, ensuring its functionality and user experience met the project goals.",
+        "technologies":"<b>React JS and Typescript</b> for the Web application development. <br /><br />I used <b>Vite</b> as a fast development build tool.",
+        "img": "/mockuperHangman.png",
+        "logo":"/hangman.png",
+        "link": "https://hangman-game-nourhan-ashraf.vercel.app/",
+        "website":true,
+        "github":"https://github.com/nourhan-ashraf/Hangman-Game"
+    },
+    {
         "id": 3,
         "name": "Job search",
         "subTitle": "A job search using an API",
@@ -41,8 +55,9 @@
         "website":true,
         "github":"https://github.com/nourhan-ashraf/Github-Job-Search"
     },
+   
     {
-        "id": 4,
+        "id": 5,
         "name": "Portfolio",
         "subTitle": "My personal portfolio",
         "description": "My website portfolio is a showcase of my work, designed and developed by me using ReactJS. It reflects my skills and expertise in front-end development, highlighting various projects I have worked on. Through this portfolio, I aim to demonstrate my proficiency in creating visually appealing and interactive web applications using modern web technologies.",
