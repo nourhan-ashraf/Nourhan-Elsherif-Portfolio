@@ -26,7 +26,7 @@ const Contact = ({ sectionsRef }) => {
                             <BsGithub className={darkMode ? styles.iconDark : styles.iconLight} />
                         </div>
                     </Link>
-                    <Link to="https://leetcode.com/u/user0335Xh/" target="_blank" rel="noopener noreferrer">
+                    <Link to="https://leetcode.com/u/nourhan-elsherif/" target="_blank" rel="noopener noreferrer">
                         <div className={styles.icon_container}>
                             <SiLeetcode className={darkMode ? styles.iconDark : styles.iconLight} />
                         </div>
