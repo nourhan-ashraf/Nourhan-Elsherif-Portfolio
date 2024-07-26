@@ -4,7 +4,8 @@
     justify-content: space-around;
     align-items: start;
     font-family: 'raleway';
-    margin: 155px 220px 0 220px;
+    margin: 155px;
+
 }
 
 .bioLight {
@@ -16,178 +17,137 @@
     color: white;
 }
 
-.locationIcon {
-    width: 25px;
-}
-
-.centerLoc {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-}
-
-.location {
-    font-size: 18px;
-    font-family: 'raleway';
-    font-weight: 700;
-}
-
-.subTitle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 27px;
-    max-width: 400px;
-}
-
-.hiTitle {
-    margin-bottom: 10px;
-    font-size: 25px;
-    font-weight: 400;
-}
-
-.job {
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'raleway';
-
-}
-
-.container {
-    position: relative;
-    text-align: center;
-    margin-left: -120px;
-
-}
 
 .picContainer {
     position: relative;
     text-align: center;
-}
 
+    .myPic {
+        width: 277px;
+        height: 344px;
+        position: absolute;
+        top: 37%;
+        left: 27%;
+        transform: translate(-20%, -50%);
+    }
 
-.highlight {
-    position: relative;
-}
+    .art {
+        width: 55px;
+        position: absolute;
+        top: 7%;
+        left: 90%;
+        transform: translate(-20%, -50%);
+    }
 
-.myPic {
-    width: 277px;
-    height: 344px;
-    position: absolute;
-    top: 37%;
-    left: 27%;
-    transform: translate(-20%, -50%);
-}
+    .code {
+        width: 55px;
+        position: absolute;
+        top: 93%;
+        left: -2%;
+        transform: translate(-20%, -50%);
+    }
 
-.art {
-    width: 55px;
-    position: absolute;
-    top: 7%;
-    left: 90%;
-    transform: translate(-20%, -50%);
-}
-
-.code {
-    width: 55px;
-    position: absolute;
-    top: 93%;
-    left: -2%;
-    transform: translate(-20%, -50%);
-}
-
-.picBg {
-    position: relative;
+    .picBg {
+        position: relative;
+    }
 }
 
 .leftPart {
     margin-top: 30px;
     margin-right: 100px;
-}
-
-@media screen and (min-width:700px) and (max-width:1045px) {
-    .hiTitle {
-        font-size: 19px;
-    }
-
-    .name {
-        width: 30vw;
-    }
 
     .subTitle {
-        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27px;
+        max-width: 400px;
+
+        .job {
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'raleway';
+
+        }
     }
 
-    .job {
-        font-size: 15px;
+    .hiTitle {
+        margin-bottom: 10px;
+        font-size: 25px;
+        font-weight: 400;
     }
 
-    .location {
-        font-size: 13px;
+
+
+    .centerLoc {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .locationIcon {
+            width: 25px;
+        }
+
+        .location {
+            font-size: 18px;
+            font-family: 'raleway';
+            font-weight: 700;
+        }
+
     }
 
-    .locationIcon {
-        width: 18px;
-    }
-
-    .myPic {
-        width: 207px;
-        height: 274px;
-        transform: translate(-20%, -46%);
-
-    }
-
-    .picBg {
-        width: 300px;
-
-    }
 }
 
-@media screen and (min-width:400px) and (max-width:700px) {
-    .hiTitle {
-        font-size: 18px;
+
+
+@media screen and (min-width:800px) and (max-width:1045px) {
+    .leftPart {
+
+        .hiTitle {
+            font-size: 19px;
+
+            .job {
+                font-size: 15px;
+            }
+        }
+
+        .name {
+            width: 30vw;
+        }
+
+        .subTitle {
+            font-size: 15px;
+        }
+
+        .centerLoc {
+            .location {
+                font-size: 13px;
+            }
+
+            .locationIcon {
+                width: 18px;
+            }
+        }
     }
 
-    .name {
-        width: 50vw;
-    }
+    .picContainer {
+        .myPic {
+            width: 207px;
+            height: 274px;
+            transform: translate(-20%, -46%);
 
-    .subTitle {
-        font-size: 15px;
-    }
+        }
 
-    .job {
-        font-size: 16px;
-    }
+        .picBg {
+            width: 300px;
 
-    .location {
-        font-size: 14px;
-    }
-
-    .locationIcon {
-        width: 16px;
-    }
-
-    .myPic {
-        width: 187px;
-        height: 254px;
-        transform: translate(-20%, -46%);
-
-    }
-
-    .picBg {
-        width: 270px;
-
+        }
     }
 
     @mixin bio {
-        flex-direction: column;
-        font-family: 'raleway';
-        justify-content: center;
-        align-items: center;
-
+        margin: 100px;
     }
 
     .bioLight {
@@ -196,59 +156,63 @@
 
     .bioDark {
         @include bio();
-        color: white;
     }
+}
 
+@media screen and (min-width:400px) and (max-width:800px) {
     .leftPart {
         margin-right: 0;
         margin-top: -50px;
         margin-bottom: 110px;
+
+        .hiTitle {
+            font-size: 18px;
+        }
+
+        .name {
+            width: 50vw;
+        }
+
+        .subTitle {
+            font-size: 15px;
+
+            .job {
+                font-size: 16px;
+            }
+        }
+
+
+        .centerLoc {
+            .location {
+                font-size: 14px;
+            }
+
+            .locationIcon {
+                width: 16px;
+            }
+        }
     }
 
-    .art {
-        width: 40px;
-    }
+    .picContainer {
+        .myPic {
+            width: 187px;
+            height: 254px;
+            transform: translate(-20%, -46%);
 
-    .code {
-        width: 40px;
-    }
-}
+        }
 
-@media screen and (max-width:400px) {
-    .hiTitle {
-        font-size: 17px;
-    }
+        .picBg {
+            width: 270px;
 
-    .name {
-        width: 50vw;
-    }
+        }
 
-    .subTitle {
-        font-size: 14px;
-    }
+        .art {
+            width: 40px;
+        }
 
-    .job {
-        font-size: 14px;
-    }
-
-    .location {
-        font-size: 12px;
-    }
-
-    .locationIcon {
-        width: 16px;
-    }
-
-    .myPic {
-        width: 157px;
-        height: 224px;
-        transform: translate(-20%, -46%);
-
-    }
-
-    .picBg {
-        width: 230px;
-
+        .code {
+            width: 40px;
+        }
     }
 
     @mixin bio {
@@ -267,24 +231,82 @@
         @include bio();
         color: white;
     }
+}
 
+@media screen and (max-width:399px) {
     .leftPart {
         margin-right: 0;
         margin-top: -50px;
         margin-bottom: 110px;
         margin-left: -90px;
 
-    }
+        .hiTitle {
+            font-size: 17px;
+        }
 
-    .art {
-        width: 30px;
-    }
+        .name {
+            width: 50vw;
+        }
 
-    .code {
-        width: 30px;
+        .subTitle {
+            font-size: 14px;
+
+            .job {
+                font-size: 14px;
+            }
+        }
+
+        .centerLoc {
+
+            .location {
+                font-size: 12px;
+            }
+
+            .locationIcon {
+                width: 16px;
+            }
+        }
     }
 
     .picContainer {
         margin-left: -100px;
+
+        .myPic {
+            width: 157px;
+            height: 224px;
+            transform: translate(-20%, -46%);
+
+        }
+
+        .picBg {
+            width: 230px;
+
+        }
+
+        .art {
+            width: 30px;
+        }
+
+        .code {
+            width: 30px;
+        }
     }
+
+    @mixin bio {
+        display: grid;
+        margin: 30% 50%
+    }
+
+    .bioLight {
+        @include bio();
+    }
+
+    .bioDark {
+        @include bio();
+        color: white;
+    }
+
+
+
+
 }

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import styles from './Contact.module.scss'
 import { BsGithub, BsLinkedin, BsMedium } from 'react-icons/bs'
+import { SiLeetcode } from "react-icons/si";
 import { ImBehance2 } from 'react-icons/im'
 import { SiUpwork } from 'react-icons/si'
 import { CgMail } from 'react-icons/cg'
@@ -9,7 +10,7 @@ import Footer from "../Footer/Footer";
 import { DarkModeContext } from "../../context/ThemeContext";
 
 const Contact = ({ sectionsRef }) => {
-    const {darkMode} = useContext(DarkModeContext)
+    const { darkMode } = useContext(DarkModeContext)
     return (
         <div ref={(ref) => (sectionsRef.current['section4'] = ref)} >
             <div className={darkMode ? styles.contactDark : styles.contactLight} >
@@ -23,6 +24,11 @@ const Contact = ({ sectionsRef }) => {
                     <Link to="https://github.com/nourhan-ashraf/" target="_blank" rel="noopener noreferrer">
                         <div className={styles.icon_container}>
                             <BsGithub className={darkMode ? styles.iconDark : styles.iconLight} />
+                        </div>
+                    </Link>
+                    <Link to="https://leetcode.com/u/user0335Xh/" target="_blank" rel="noopener noreferrer">
+                        <div className={styles.icon_container}>
+                            <SiLeetcode className={darkMode ? styles.iconDark : styles.iconLight} />
                         </div>
                     </Link>
                     <Link to="https://www.linkedin.com/in/nourhan-elsherif/" target="_blank" rel="noopener noreferrer">

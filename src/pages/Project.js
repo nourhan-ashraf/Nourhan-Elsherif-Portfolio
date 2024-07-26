@@ -10,11 +10,10 @@ import { DarkModeContext } from "../context/ThemeContext";
 import ScrollToTop from "../ScrollToTop";
 
 const Project = () => {
-    const {darkMode} = useContext(DarkModeContext)
-    const { id } = useParams();
+    const { darkMode } = useContext(DarkModeContext)
+    const { linkName } = useParams();
     const [isError, setIsError] = useState(true);
-    const projectParams = data.find((i) => i.id == id);
-    console.log(projectParams)
+    const projectParams = data.find((i) => i.linkName === linkName);
     useEffect(() => {
         setIsError(projectParams === undefined);
     }, [projectParams]);
@@ -24,26 +23,29 @@ const Project = () => {
             <ScrollToTop />
             <WorkNav />
             {!isError ? (
-                <ProjectBio
-                    params={{
-                        id: projectParams.id,
-                        name: projectParams.name,
-                        subTitle: projectParams.subTitle,
-                        desc: projectParams.description,
-                        myPart: projectParams.myPart,
-                        tech: projectParams.technologies,
-                        demo: projectParams.demo,
-                        img: projectParams.img,
-                        logo: projectParams.logo,
-                        link: projectParams.link,
-                        web: projectParams.website,
-                        github: projectParams.github,
-                    }}
-                />
+                <>
+                    <ProjectBio
+                        params={{
+                            id: projectParams.id,
+                            name: projectParams.name,
+                            subTitle: projectParams.subTitle,
+                            desc: projectParams.description,
+                            myPart: projectParams.myPart,
+                            tech: projectParams.technologies,
+                            demo: projectParams.demo,
+                            img: projectParams.img,
+                            logo: projectParams.logo,
+                            link: projectParams.link,
+                            web: projectParams.website,
+                            github: projectParams.github,
+                        }}
+                    />
+                    <Footer />
+                </>
+
             ) : (
                 <Error />
             )}
-            <Footer />
         </div>
     )
 }

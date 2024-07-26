@@ -4,48 +4,23 @@ import { Link } from 'react-router-dom';
 import { DarkModeContext } from "../../context/ThemeContext";
 
 const Nav = ({ handleScroll }) => {
-    const {darkMode, toggleModes} = useContext(DarkModeContext)
-    {/*const [homeClicked, setHomeClicked] = useState(true)
-    const [doClicked, setDoClicked] = useState(false)
-const [contactClicked, setContactClicked] = useState(false)*/}
+    const { darkMode, toggleModes } = useContext(DarkModeContext)
     const [workClicked, setWorkClicked] = useState(false)
 
-    {/*const handleHomeClick = () => {
-        setHomeClicked(true);
-        setDoClicked(false);
-        setWorkClicked(false);
-    setContactClicked(false);
-        handleScroll('section1');
-    }*/}
     const handleDoClick = () => {
-        {/*setHomeClicked(false);
-        setDoClicked(true);
-        setWorkClicked(false);
-    setContactClicked(false);*/}
         handleScroll('section2');
-
     }
     const handleWorkClick = () => {
-        {/*setHomeClicked(false);
-        setDoClicked(false);
-        setWorkClicked(true);
-    setContactClicked(false);*/}
         handleScroll('section3');
-
     }
     const handleContactClick = () => {
-        {/*setHomeClicked(false);
-        setDoClicked(false);
-        setWorkClicked(false);
-    setContactClicked(true);*/}
         handleScroll('section4');
-
     }
 
     useEffect(() => {
         if (window.location.pathname.startsWith('/project/')) setWorkClicked(true)
-
     }, [])
+
     return (
         <div className={darkMode ? styles.navDark : styles.navLight}>
             {!workClicked ? <img onClick={toggleModes} className={styles.darkIcon} src={darkMode ? "/light.png" : "/dark.png"} /> : <Link to="/"><img className={styles.backIcon} src="/back.png" /></Link>}

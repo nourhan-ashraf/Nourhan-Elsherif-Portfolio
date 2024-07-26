@@ -11,12 +11,15 @@ const WhatIdo = ({ sectionsRef }) => {
             </div>
             <br />
             <p className={styles.description}>
-                I’m a fresh graduate Computer Engineer, I specialize in <strong>Front-end development</strong>,
-                specifically in creating web applications using <strong>Angular TS</strong> and <strong>React JS</strong>. Additionally, I have some knowledge in backend development and a strong background in UI design.
-                I possess expertise in designing user interfaces through tools like <strong >Adobe XD</strong> and <strong >Figma</strong>.
-                Beyond my technical skills, I have a passion for various forms of art and I actively engage
-                in digital painting as well. I am highly motivated to expand my knowledge and thrive on embracing
-                new challenges with enthusiasm.
+                I'm a <strong>junior Front-end Developer</strong> currently working at Oola Technologies,
+                where I specialize in <strong>Angular TS</strong> to create user-friendly web applications for the insurance industry.
+                With nearly a year of experience in this role, I have honed my skills in building effective solutions.
+                Before joining Oola Technologies, I freelanced with <strong>React JS for 3 months</strong>, developing dynamic and responsive web apps.
+                <br />
+                I also have a strong grasp of data structures and algorithms, and I enjoy problem-solving.
+                My background includes some understanding of backend development, which complements my front-end skills,
+                and a solid foundation in UI design using tools like Adobe XD and Figma.
+                I am always eager to learn new technologies and embrace new challenges.
             </p>
         </div>
     )

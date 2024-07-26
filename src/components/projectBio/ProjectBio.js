@@ -15,7 +15,8 @@ const ProjectBio = ({ params }) => {
                 <br />
                 <div className={styles.name}>{params.name}</div>
                 <div className={styles.subTitle}>{params.subTitle}</div>
-                {params.link==="" ? <div className={styles.inProgress}>Website changes in progress; link will be shared here upon completion.</div> : <Link to={params.link} target="_blank"><button className={styles.link}>{params.web ? "View website" : "View design on behance"} <ImArrowUpRight2 /></button></Link>}
+                {params.link === "" ? ""
+                    : <Link to={params.link} target="_blank"><button className={styles.link}>{params.web ? "View website" : "View design on behance"} <ImArrowUpRight2 /></button></Link>}
                 <Link to={params.github} target="_blank"><button className={styles.link}>{params.github ? "View project on github" : ""} {params.github ? <ImArrowUpRight2 /> : ""} </button></Link>
 
 
