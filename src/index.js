@@ -5,10 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { DarkModeProvider } from './context/ThemeContext';
+import { Analytics } from "@vercel/analytics/react"
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <DarkModeProvider>
     <React.StrictMode>
+      <Analytics />
       <BrowserRouter>
         <App />
       </BrowserRouter>
