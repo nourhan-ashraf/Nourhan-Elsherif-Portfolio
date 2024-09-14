@@ -13,7 +13,7 @@ const WorkNav = () => {
     }, [])
     return (
         <div className={darkMode ? styles.navDark : styles.navLight}>
-            {!workClicked ? <img onClick={toggleModes} className={styles.darkIcon} src={darkMode ? "/light.png" : "/dark.png"} /> : <Link to="/"><img className={styles.backIcon} src={darkMode ? "/backDark.png" : "/back.png"} /></Link>}
+            {!workClicked ? <img alt="color mode toggle" onClick={toggleModes} className={styles.darkIcon} src={darkMode ? "/light.png" : "/dark.png"} /> : <Link to="/"><img alt="color mode toggle" className={styles.backIcon} src={darkMode ? "/backDark.png" : "/back.png"} /></Link>}
 
             <Link to="https://drive.google.com/file/d/1rAeUtFG1drkPDOVzZeI1MQnDBr0m2bCi/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <button className={darkMode ? styles.resumeBtnDark : styles.resumeBtnLight}>Resume</button>

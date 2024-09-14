@@ -7,7 +7,7 @@ const Work = ({ sectionsRef }) => {
     const { darkMode } = useContext(DarkModeContext)
     return (
         <div ref={(ref) => (sectionsRef.current['section3'] = ref)} className={styles.work}>
-            <img className={styles.highlight} src={darkMode ? '/workDark.svg' : '/workLight.svg'} />
+            <img alt="highlight" className={styles.highlight} src={darkMode ? '/workDark.svg' : '/workLight.svg'} />
             <WorkCard />
         </div>
     )

@@ -7,7 +7,7 @@ const WhatIdo = ({ sectionsRef }) => {
     return (
         <div ref={(ref) => (sectionsRef.current['section2'] = ref)} className={darkMode ? styles.whatDark : styles.whatLight}>
             <div>
-                <img className={styles.highlight} src={darkMode ? '/whatDark.svg' : '/whatLight.svg'} />
+                <img alt="highlight" className={styles.highlight} src={darkMode ? '/whatDark.svg' : '/whatLight.svg'} />
             </div>
             <br />
             <p className={styles.description}>

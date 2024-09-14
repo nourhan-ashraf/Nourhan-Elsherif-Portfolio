@@ -23,7 +23,7 @@ const Nav = ({ handleScroll }) => {
 
     return (
         <div className={darkMode ? styles.navDark : styles.navLight}>
-            {!workClicked ? <img onClick={toggleModes} className={styles.darkIcon} src={darkMode ? "/light.png" : "/dark.png"} /> : <Link to="/"><img className={styles.backIcon} src="/back.png" /></Link>}
+            {!workClicked ? <img alt="color mode toggle" onClick={toggleModes} className={styles.darkIcon} src={darkMode ? "/light.png" : "/dark.png"} /> : <Link to="/"><img alt="color mode toggle" className={styles.backIcon} src="/back.png" /></Link>}
             <div>
                 <ul className={styles.flexCenter}>
                     <li onClick={handleDoClick} className={styles.listItem}>What I do</li>

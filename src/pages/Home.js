@@ -9,7 +9,7 @@ import { DarkModeContext } from "../context/ThemeContext"
 const Home = () => {
     const [visible, setVisible] = useState(false)
     const sectionsRef = useRef({});
-    const {darkMode, toggleModes} = useContext(DarkModeContext)
+    const { darkMode, toggleModes } = useContext(DarkModeContext)
 
     const handleScroll = (sectionId) => {
         const sectionElement = sectionsRef.current[sectionId];
@@ -36,7 +36,7 @@ const Home = () => {
     window.addEventListener('scroll', toggleVisible);
     return (
         <div className={darkMode ? "homeBgDark" : ""}>
-            <img onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none', cursor: "pointer", position: "sticky", top: "82%", left: "85%", width: "50px" , zIndex:"10"}} src={darkMode ? "/upDark.png" : "/upLight.png"} />
+            <img alt="scroll to top icon" onClick={scrollToTop} style={{ display: visible ? 'inline' : 'none', cursor: "pointer", position: "sticky", top: "82%", left: "85%", width: "50px", zIndex: "10" }} src={darkMode ? "/upDark.png" : "/upLight.png"} />
             <Nav handleScroll={handleScroll} />
             <Bio sectionsRef={sectionsRef} />
             <WhatIdo sectionsRef={sectionsRef} />

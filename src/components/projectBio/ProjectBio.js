@@ -11,7 +11,7 @@ const ProjectBio = ({ params }) => {
         <div className={styles.project}>
 
             <div className={darkMode ? styles.projectBioDark : styles.projectBioLight}>
-                <img src={params.logo} className={styles.logo} />
+                <img alt="project logo" src={params.logo} className={styles.logo} />
                 <br />
                 <div className={styles.name}>{params.name}</div>
                 <div className={styles.subTitle}>{params.subTitle}</div>
@@ -24,14 +24,14 @@ const ProjectBio = ({ params }) => {
 
             {params.desc && <div className={darkMode ? styles.descDark : styles.descLight}>
                 <div>
-                    <img className={styles.highlight} src={darkMode ? '/descDark.svg' : '/descLight.svg'} />
+                    <img alt="highlight" className={styles.highlight} src={darkMode ? '/descDark.svg' : '/descLight.svg'} />
                 </div>
                 <p dangerouslySetInnerHTML={{ __html: params.desc }}></p>
             </div>}
 
             {params.demo && <div className={darkMode ? styles.demoDark : styles.demoLight}>
                 <div>
-                    <img className={styles.highlight} src={darkMode ? '/demoDark.svg' : '/demoLight.svg'} />
+                    <img alt="highlight" className={styles.highlight} src={darkMode ? '/demoDark.svg' : '/demoLight.svg'} />
                 </div>
                 <br />
                 <div className={styles.center}>
@@ -42,14 +42,14 @@ const ProjectBio = ({ params }) => {
 
             {params.myPart && <div className={darkMode ? styles.myPartDark : styles.myPartLight}>
                 <div>
-                    <img className={styles.highlight} src={darkMode ? '/partDark.svg' : '/partLight.svg'} />
+                    <img alt="highlight" className={styles.highlight} src={darkMode ? '/partDark.svg' : '/partLight.svg'} />
                 </div>
                 <p dangerouslySetInnerHTML={{ __html: params.myPart }}></p>
             </div>}
 
             {params.tech && <div className={darkMode ? styles.techDark : styles.techLight}>
                 <div>
-                    <img className={styles.highlightTech} src={darkMode ? '/techDark.svg' : '/techLight.svg'} />
+                    <img alt="highlight" className={styles.highlightTech} src={darkMode ? '/techDark.svg' : '/techLight.svg'} />
                 </div>
                 <p dangerouslySetInnerHTML={{ __html: params.tech }}></p>
             </div>}

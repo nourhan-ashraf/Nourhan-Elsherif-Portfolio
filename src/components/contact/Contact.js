@@ -15,39 +15,45 @@ const Contact = ({ sectionsRef }) => {
         <div ref={(ref) => (sectionsRef.current['section4'] = ref)} >
             <div className={darkMode ? styles.contactDark : styles.contactLight} >
                 <div>
-                    <img className={styles.highlight} src={darkMode ? '/contactDark.svg' : '/contactLight.svg'} />
+                    <img alt="highlight" className={styles.highlight} src={darkMode ? '/contactDark.svg' : '/contactLight.svg'} />
                 </div>
                 <br />
                 <div className={styles.subTitle}>Get in touch with me on:</div>
                 <br />
                 <div className={styles.icons}>
-                    <Link to="https://github.com/nourhan-ashraf/" target="_blank" rel="noopener noreferrer">
+                    <Link to="https://github.com/nourhan-ashraf/" target="_blank" rel="noopener noreferrer" aria-label="Visit Nourhan Elsherif's GitHub profile"
+                    >
                         <div className={styles.icon_container}>
                             <BsGithub className={darkMode ? styles.iconDark : styles.iconLight} />
                         </div>
                     </Link>
-                    <Link to="https://leetcode.com/u/nourhan-elsherif/" target="_blank" rel="noopener noreferrer">
+                    <Link to="https://leetcode.com/u/nourhan-elsherif/" target="_blank" rel="noopener noreferrer" aria-label="Visit Nourhan Elsherif's LeetCode profile"
+                    >
                         <div className={styles.icon_container}>
                             <SiLeetcode className={darkMode ? styles.iconDark : styles.iconLight} />
                         </div>
                     </Link>
-                    <Link to="https://www.linkedin.com/in/nourhan-elsherif/" target="_blank" rel="noopener noreferrer">
+                    <Link to="https://www.linkedin.com/in/nourhan-elsherif/" target="_blank" rel="noopener noreferrer" aria-label="Visit Nourhan Elsherif's LinkedIn profile"
+                    >
                         <div className={styles.icon_container}>
                             <BsLinkedin className={darkMode ? styles.iconDark : styles.iconLight} />
                         </div>
                     </Link>
-                    <Link to="https://www.behance.net/nourhan117461" target="_blank" rel="noopener noreferrer">
+                    <Link to="https://www.behance.net/nourhan117461" target="_blank" rel="noopener noreferrer" aria-label="Visit Nourhan Elsherif's Behance profile"
+                    >
                         <div className={styles.icon_container}>
                             <ImBehance2 className={darkMode ? styles.iconDark : styles.iconLight} />
                         </div>
                     </Link>
-                    <Link to="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nourhan.elsherif20@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <Link to="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nourhan.elsherif20@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Nourhan Elsherif's Gmail"
+                    >
                         <div className={styles.icon_container2}>
 
                             <CgMail className={darkMode ? styles.icon2Dark : styles.icon2Light} />
                         </div>
                     </Link>
-                    <Link to="https://medium.com/@nourhan.elsherif" target="_blank" rel="noopener noreferrer">
+                    <Link to="https://medium.com/@nourhan.elsherif" target="_blank" rel="noopener noreferrer" aria-label="Visit Nourhan Elsherif's Medium profile"
+                    >
                         <div className={styles.icon_container2}>
                             <BsMedium className={darkMode ? styles.icon2Dark : styles.icon2Light} />
                         </div>
