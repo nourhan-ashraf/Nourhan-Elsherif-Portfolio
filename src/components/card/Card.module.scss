@@ -1,128 +1,101 @@
-@mixin card($shadow, $bgHover) {
-    margin: 0 50px;
-    border-radius: 20px;
-    padding-bottom: 25px;
-    width: 305px;
-    height: 289px;
-    border-radius: 25px;
-    background: #F7F7F7;
-    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    font-family: 'raleway';
-    transition: transform 0.2s;
-    flex: 0 0 auto;
-}
-
-.cardLight {
-    @include card(rgba(0, 0, 0, 0.25), rgb(242, 242, 242))
-}
-
-.cardDark {
-    @include card(rgba(255, 255, 255, 0.25), rgb(219, 219, 219))
-}
-
 .scrollContainer {
-    display: flex;
-    overflow-x: auto;
-    padding: 10px;
-    scroll-behavior: smooth;
-}
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 
-.scrollContainer::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     height: 8px;
-    cursor: pointer;
-}
+  }
 
-.scrollContainer::-webkit-scrollbar-thumb {
-    background-color: rgb(162, 162, 162);
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
     border-radius: 10px;
-    cursor: pointer;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
 }
-
-.scrollContainer::-webkit-scrollbar-track {
-    background: rgb(233, 232, 232);
-    border-radius: 10px;
-    cursor: pointer;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
+.cardLight,
+.cardDark {
+  width: 300px;
+  min-height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
 
-.cardDark:hover,
-.cardLight:hover {
-    transform: scale(1.05);
+  &.cardDark {
+    background-color: #171717;
+    color: #fff;
+  }
+
+  &.cardLight {
+    background-color: #f9f9f9;
+    color: #333;
+  }
 }
 
 .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 12px;
-    width: 90%;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .title {
-    line-height: 35px;
-    color: #000;
-    text-align: center;
-    font-size: 18px;
-    font-family: Raleway;
-    font-weight: 700;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: inherit;
 }
 
 .desc {
-    color: #000;
-    text-align: center;
-    font-size: 13px;
-    font-family: Raleway;
-    font-weight: 400;
+  font-size: 14px;
+  color: inherit;
+  margin-bottom: 15px;
 }
 
 .btn {
-    justify-content: end;
-    align-items: end;
-    font-family: 'raleway';
-    border: none;
-    text-decoration: underline;
-    background-color: transparent;
-    color: #8f64f1;
-    font-weight: 700;
-    font-size: 14px;
-    cursor: pointer;
+  background-color: #f8ef43;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
 
-    &:hover {
-        color: #9f7eee;
-    }
-}
+  &:hover {
+    background-color: #f8ef43;
+  }
 
-
-@media screen and (max-width:1045px) {
-
-    @mixin card($shadow, $bgHover) {
-        margin: 0 30px;
-        width: 255px;
-        height: 239px;
-    }
-
-    .cardLight {
-        @include card(rgba(0, 0, 0, 0.25), rgb(242, 242, 242))
-    }
-
-    .cardDark {
-        @include card(rgba(255, 255, 255, 0.25), rgb(219, 219, 219))
-    }
-
-    .title {
-        font-size: 15px;
-    }
-
-    .desc {
-        font-size: 10px;
-    }
-
-    .btn {
-        font-size: 12px;
-    }
+  svg {
+    margin-left: 8px;
+    font-size: 18px;
+  }
 }

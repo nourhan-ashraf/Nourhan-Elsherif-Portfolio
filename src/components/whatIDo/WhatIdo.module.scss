@@ -1,56 +1,54 @@
 @mixin what($bg) {
-    background: $bg;
-    font-family: 'raleway';
-    margin-top: 100px;
-    padding: 7vw 10vw;
+  background: $bg;
+  font-family: 'raleway';
+  margin-top: 100px;
+  padding: 4vw 10vw;
 }
 
 .whatLight {
-    @include what(rgba(217, 217, 217, 0.20))
+  @include what(rgba(217, 217, 217, 0.2));
 }
 
 .whatDark {
-    @include what(#171717);
-    color: white;
+  @include what(#171717);
+  color: white;
 }
 
 .container {
-    position: relative;
+  position: relative;
 }
 
 .highlight {
-    width: 190px;
+  width: 190px;
 }
 
 .title {
-    position: absolute;
-    font-size: 24px;
-    font-weight: 700;
-    top: 47%;
-    left: 13.5%;
-    color: #000;
-    transform: translate(-100%, -50%);
+  position: absolute;
+  font-size: 24px;
+  font-weight: 700;
+  top: 47%;
+  left: 13.5%;
+  color: #000;
+  transform: translate(-100%, -50%);
 }
 
 .description {
-    text-align: justify;
-    font-size: 20px;
-    font-family: 'raleway';
-    line-height: 133.891%;
-    align-items: start;
-    justify-content: start;
-    flex-shrink: 0;
-    margin-left: 30px;
+  text-align: justify;
+  font-size: 20px;
+  font-family: 'raleway';
+  line-height: 133.891%;
+  align-items: start;
+  justify-content: start;
+  flex-shrink: 0;
+  margin-left: 30px;
 }
 
-@media screen and (max-width:1045px) {
+@media screen and (max-width: 1045px) {
+  .description {
+    font-size: 17px;
+  }
 
-    .description {
-        font-size: 17px;
-    }
-
-    .highlight {
-        width: 160px;
-    }
-
+  .highlight {
+    width: 160px;
+  }
 }
