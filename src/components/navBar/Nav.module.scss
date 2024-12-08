@@ -1,56 +1,56 @@
 .darkIcon {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
 
 .backIcon {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
 @mixin nav($color) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 70px;
-    padding-top: 40px;
-    color: $color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+  padding-top: 40px;
+  color: $color;
 }
 
 .navLight {
-    @include nav(black)
+  @include nav(black);
 }
 
 .navDark {
-    @include nav(white);
-    background-color: #0F0E0E;
+  @include nav(white);
+  background-color: #0f0e0e;
 }
 
 .flexCenter {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
 .listItem {
+  list-style-type: none;
+  font-family: 'raleway';
+  font-weight: 400;
+  font-size: 20px;
+
+  &:hover {
     list-style-type: none;
     font-family: 'raleway';
-    font-weight: 400;
+    font-weight: 700;
     font-size: 20px;
-
-    &:hover {
-        list-style-type: none;
-        font-family: 'raleway';
-        font-weight: 700;
-        font-size: 20px;
-        text-decoration: underline;
-        cursor: pointer;
-    }
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
 
 /*.listItemClicked {
@@ -67,124 +67,142 @@
 }*/
 
 @mixin resumeBtn($bg) {
-    background-color: $bg;
-    color: white;
-    width: 124px;
-    height: 43px;
-    border-radius: 10px;
-    font-size: 22px;
-    font-weight: 600;
-    font-family: 'raleway';
-    cursor: pointer;
-    border: none;
+  background-color: $bg;
+  color: white;
+  width: 124px;
+  height: 43px;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'raleway';
+  cursor: pointer;
+  border: none;
 }
 
 .resumeBtnLight {
-    @include resumeBtn(black)
+  @include resumeBtn(black);
 }
 
 .resumeBtnDark {
+  @include resumeBtn(white);
+  color: black;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1045px) {
+  .darkIcon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .backIcon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .listItem {
+    font-size: 16px;
+
+    &:hover {
+      font-size: 16px;
+    }
+  }
+
+  .flexCenter {
+    gap: 35px;
+  }
+
+  @mixin resumeBtn($bg) {
+    background-color: $bg;
+    width: 104px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  .resumeBtnLight {
+    @include resumeBtn(black);
+  }
+
+  .resumeBtnDark {
     @include resumeBtn(white);
     color: black;
+  }
 }
 
-@media screen and (min-width:700px) and (max-width:1045px) {
-    .darkIcon {
-        width: 35px;
-        height: 35px;
-    }
+@media screen and (max-width: 700px) {
+  @mixin nav($color) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    padding-top: 40px;
+    color: $color;
+  }
 
-    .backIcon {
-        width: 25px;
-        height: 25px;
-    }
+  .navLight {
+    @include nav(black);
+  }
 
-    .listItem {
-        font-size: 16px;
+  .navDark {
+    @include nav(white);
+    background-color: #0f0e0e;
+  }
 
-        &:hover {
-            font-size: 16px;
-        }
-    }
+  .darkIcon {
+    width: 27px;
+    height: 27px;
+  }
 
-    .flexCenter {
-        gap: 35px;
-    }
+  .backIcon {
+    width: 22px;
+    height: 22px;
+  }
 
-    @mixin resumeBtn($bg) {
-        background-color: $bg;
-        width: 104px;
-        height: 35px;
-        font-size: 18px;
-    }
+  .listItem {
+    font-size: 12px;
 
-    .resumeBtnLight {
-        @include resumeBtn(black)
+    &:hover {
+      font-size: 12px;
     }
+  }
 
-    .resumeBtnDark {
-        @include resumeBtn(white);
-        color: black;
-    }
+  .flexCenter {
+    gap: 20px;
+  }
+
+  @mixin resumeBtn($bg) {
+    background-color: $bg;
+    width: 70px;
+    height: 26px;
+    font-size: 12px;
+    margin-left: 20px;
+  }
+
+  .resumeBtnLight {
+    @include resumeBtn(black);
+  }
+
+  .resumeBtnDark {
+    @include resumeBtn(white);
+    color: black;
+  }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width: 400px) {
+  @mixin resumeBtn($bg) {
+    background-color: $bg;
+    width: 62px;
+    height: 22px;
+    font-size: 11px;
+    margin-left: 20px;
+  }
 
-    @mixin nav($color) {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 20px;
-        padding-top: 40px;
-        color: $color;
-    }
+  .resumeBtnLight {
+    @include resumeBtn(black);
+  }
 
-    .navLight {
-        @include nav(black)
-    }
-
-    .navDark {
-        @include nav(white);
-        background-color: #0F0E0E;
-    }
-
-    .darkIcon {
-        width: 27px;
-        height: 27px;
-    }
-
-    .backIcon {
-        width: 22px;
-        height: 22px;
-    }
-
-    .listItem {
-        font-size: 12px;
-
-        &:hover {
-            font-size: 12px;
-        }
-    }
-
-    .flexCenter {
-        gap: 20px;
-    }
-
-    @mixin resumeBtn($bg) {
-        background-color: $bg;
-        width: 70px;
-        height: 26px;
-        font-size: 12px;
-        margin-left: 20px;
-    }
-
-    .resumeBtnLight {
-        @include resumeBtn(black)
-    }
-
-    .resumeBtnDark {
-        @include resumeBtn(white);
-        color: black;
-    }
+  .resumeBtnDark {
+    @include resumeBtn(white);
+    color: black;
+  }
 }

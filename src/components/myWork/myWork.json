@@ -64,7 +64,7 @@
         "linkName": "portfolio",
         "name": "Portfolio",
         "subTitle": "My personal portfolio",
-        "description": "My website portfolio is a showcase of my work, designed and developed by me using ReactJS. It reflects my skills and expertise in front-end development, highlighting various projects I have worked on. Through this portfolio, I aim to demonstrate my proficiency in creating visually appealing and interactive web applications using modern web technologies.",
+        "description": "My website portfolio is a showcase of my work, designed and developed by me using ReactJS. It reflects my skills and expertise in frontend development, highlighting various projects I have worked on. Through this portfolio, I aim to demonstrate my proficiency in creating visually appealing and interactive web applications using modern web technologies.",
         "demo": "",
         "myPart": "",
         "technologies": "For the UI Design part I used <b>Figma</b>.<br /><br />For the Web application development I used <b>React JS</b>.",

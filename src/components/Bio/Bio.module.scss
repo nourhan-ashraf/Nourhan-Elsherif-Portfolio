@@ -55,23 +55,15 @@
   margin-right: 100px;
 
   .subTitle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    margin-top: 1rem;
     font-size: 20px;
     font-weight: 400;
     line-height: 27px;
     max-width: 400px;
-
-    .job {
-      font-size: 20px;
-      font-weight: 700;
-      font-family: 'raleway';
-    }
   }
 
   .hiTitle {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     font-size: 25px;
     font-weight: 400;
   }
@@ -218,12 +210,26 @@
 }
 
 @media screen and (max-width: 399px) {
-  .leftPart {
-    margin-right: 0;
-    margin-top: -50px;
-    margin-bottom: 110px;
-    margin-left: -90px;
+  @mixin bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem;
+  }
 
+  .bioLight {
+    @include bio();
+  }
+
+  .bioDark {
+    @include bio();
+    color: white;
+  }
+  .leftPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
     .hiTitle {
       font-size: 17px;
     }
@@ -252,8 +258,7 @@
   }
 
   .picContainer {
-    margin-left: -100px;
-
+    margin-top: 3rem;
     .myPic {
       width: 157px;
       height: 224px;
@@ -271,19 +276,5 @@
     .code {
       width: 30px;
     }
-  }
-
-  @mixin bio {
-    display: grid;
-    margin: 30% 50%;
-  }
-
-  .bioLight {
-    @include bio();
-  }
-
-  .bioDark {
-    @include bio();
-    color: white;
   }
 }
