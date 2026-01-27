@@ -17,21 +17,16 @@ const WhatIdo = ({ sectionsRef }) => {
       </div>
       <br />
       <p className={styles.description}>
-        Goal-oriented <strong>Junior Frontend Engineer</strong> with over 1 year of experience
-        building dynamic and responsive web applications. Specializing in <strong>Angular</strong>{' '}
+        Goal-oriented <strong>Frontend Engineer</strong> with 2+ years of experience in web development. 
+        Specializing in <strong>Angular</strong>{' '}
         and <strong>React</strong> with a strong proficiency in <strong>JavaScript</strong>,{' '}
         <strong>TypeScript</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and{' '}
-        <strong>SCSS</strong> to create high-quality user interfaces. I also have a solid background
-        in <strong>data structures</strong> and <strong>algorithms</strong> and basic backend
-        knowledge of Node JS.
+        <strong>SCSS</strong> to create high-quality user interfaces. 
         <br />
         <br />
-        Skilled in <strong>refactoring legacy code</strong> to improve maintainability and{' '}
-        <strong>enhance performance</strong>. Familiar with tools like{' '}
-        <strong>Clarity, Highlight, GCP, AWS, and Git</strong> for seamless project development and
-        deployment. I have experience <strong>automating workflows</strong> to streamline
-        development processes, increase efficiency, and reduce manual errors. Focused on delivering
-        clean, efficient code while continuously improving processes.
+        Skilled at <strong>refactoring legacy code</strong> to improving maintainability and{' '}
+        <strong>optimizing performance</strong>. quick to learn new tools and frameworks, 
+        with experience following <strong>agile corporate processes</strong> and <strong>collaborating with international clients.</strong>
         <br />
         <br />
         Fast and flexible in transitioning between tools and technology stacks, I actively
